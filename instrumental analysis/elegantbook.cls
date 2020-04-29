@@ -367,8 +367,13 @@
   \newcommand{\notename}{笔记}
   \renewcommand*{\proofname}{证明}
   \newcommand{\problemname}{例题}
+<<<<<<< HEAD
   \newcommand{\definitionname}{}
   \newcommand{\theoremname}{}
+=======
+  \newcommand{\definitionname}{定义}
+  \newcommand{\theoremname}{定理}
+>>>>>>> f3e5d7d8d279a7b92dade7edb0329a0c51d43994
   \newcommand{\axiomname}{公理}
   \newcommand{\postulatename}{公设}
   \newcommand{\lemmaname}{引理}
@@ -425,7 +430,7 @@
   \setlength\parindent{2em}
   \newcommand\figref[1]{\textbf{Figura}~\ref{#1}}
   \newcommand\tabref[1]{\textbf{Tabella}~\ref{#1}}
-  \renewcommand{\chaptername}{Capitolo \arabic{chapter}}
+  \renewcommand{\chaptername}{Capitolo \thechapter}
   \newcommand{\authorname}{\textbf{Autore: }}
   \newcommand{\institutename}{\textbf{Istituto: }}
   \newcommand{\datename}{\textbf{Data: }}
@@ -563,7 +568,16 @@
       colbacktitle=third, 
       overlay unbroken and last={
         \node[anchor=south east, outer sep=0pt] at (\linewidth-width,0) {
-          \textcolor{third}{$\spadesuit$}};}},}
+          \textcolor{third}{$\spadesuit$}};}},
+	emptystyle/.style={
+		common,
+		colframe=main,  
+		colback=main!5,
+		colbacktitle=main, 
+		separator sign none,
+		overlay unbroken and last={
+			\node[anchor=south east, outer sep=0pt] at (\linewidth-width,0) {
+				\textcolor{main}{$\clubsuit$}};}},}
 
   \newtcbtheorem[]{definition}{\definitionname}{defstyle}{def}
   \newtcbtheorem[]{theorem}{\theoremname}{thmstyle}{thm}
@@ -572,6 +586,8 @@
   \newtcbtheorem[auto counter,number within=chapter]{proposition}{\propositionname}{propstyle}{pro}
   \newtcbtheorem[auto counter,number within=chapter]{corollary}{\corollaryname}{thmstyle}{cor}
   \newtcbtheorem[auto counter,number within=chapter]{lemma}{\lemmaname}{thmstyle}{lem}
+  \newtcbtheorem[auto counter,number within=chapter]{emptytcb}{}{emptystyle}{pri}
+  
 }{\relax}
 
 \ifdefstring{\ELEGANT@mode}{simple}{
@@ -588,6 +604,8 @@
     \bfseries\color{second}}{}{0.5em}{\thmname{#1} \thmnumber{#2} \thmnote{(#3)}}
   \newtheoremstyle{eprostyle}{3pt}{3pt}{\citshape}{-3pt}{
     \bfseries\color{third}}{}{0.5em}{\thmname{#1} \thmnumber{#2} \thmnote{(#3)}}
+  \newtheoremstyle{emptytcbstyle}{3pt}{3pt}{\citshape}{-3pt}{
+	\bfseries\color{main}}{}{0.5em}{\thmnote{(#3)}}
 
 
   \theoremstyle{edefstyle} % definition style
@@ -630,6 +648,12 @@
   \newenvironment{proposition}[2]{
     \ifstrempty{#1}{\eproposition}{\eproposition[#1]}\ifstrempty{#2}{}{\label{pro:#2}}}{
     \endeproposition}
+
+  \theoremstyle{eemptystyle}
+  \newtheorem{eemptytcb}{ }[chapter]
+  \newenvironment{emptytcb}[2]{
+	\ifstremptytcb{#1}{\eemptytcb}{\eemptytcb[#1]}\ifstremptytcb{#2}{}{\label{pri:#2}}}{
+	\endeemptytcb}
 }{\relax}
 
 % main（green-def): example exercise problem solution
