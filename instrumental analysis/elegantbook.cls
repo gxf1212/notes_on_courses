@@ -567,9 +567,9 @@
           \textcolor{third}{$\spadesuit$}};}},
 	emptystyle/.style={
 		common,
-		colframe=main,  
-		colback=main!5,
-		colbacktitle=main, 
+		colframe=cyan,  
+		colback=cyan!5,
+		colbacktitle=cyan, 
 		separator sign none,
 		overlay unbroken and last={
 			\node[anchor=south east, outer sep=0pt] at (\linewidth-width,0) {
@@ -662,7 +662,7 @@
 \renewcommand{\theexam}{\thechapter.\arabic{exam}}
 \newenvironment{example}[1][]{
   \refstepcounter{exam}
-  \par\noindent\textbf{\color{main}{\examplename}  #1 }\rmfamily}{
+  \par\noindent\heiti{\color{main}{\examplename}}  #1 \kaishu}{
   \par\ignorespacesafterend}
 
 %% Exercise with counter
