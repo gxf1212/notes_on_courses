@@ -291,6 +291,7 @@
 
 \RequirePackage{mwe}
 \newcommand{\logo}[1]{\gdef\@logo{#1}}
+\newcommand{\classlogo}[1]{\gdef\@classlogo{#1}}
 \newcommand{\cover}[1]{\gdef\@cover{#1}}
 
 \newcommand{\question}[1]{{\par\citshape #1}\\[0.2ex]}
@@ -572,7 +573,7 @@
 		separator sign none,
 		overlay unbroken and last={
 			\node[anchor=south east, outer sep=0pt] at (\linewidth-width,0) {
-				\textcolor{main}{$\clubsuit$}};}},}
+				\textcolor{main}{$\diamondsuit$}};}},}
 
   \newtcbtheorem[]{definition}{\definitionname}{defstyle}{def}
   \newtcbtheorem[]{theorem}{\theoremname}{thmstyle}{thm}
@@ -822,14 +823,20 @@
       \ifcsname @bioinfo\endcsname \cnormal\@bioinfo\\ \fi
     \end{tabular}}
   \end{minipage}
-  \begin{minipage}[c]{0.27\linewidth}
+  \begin{minipage}[c]{0.45\linewidth}
   \begin{tikzpicture}[remember picture,overlay]
     \begin{pgfonlayer}{background}
       \node[opacity=0.8,
             anchor=south east,
             outer sep=0pt,
-            inner sep=0pt] at ($(current page.south east) +(-0.8in,1.5in)$) {
-              \ifcsname @logo\endcsname\includegraphics[width=4.2cm]{\@logo}\fi};
+            inner sep=0pt] at ($(current page.south east) +(-2.4in,0.75in)$) {
+              \ifcsname @classlogo\endcsname\includegraphics[width=5cm]{\@classlogo}\fi};
+      \node[opacity=0.8,
+      		anchor=south east,
+      		outer sep=0pt,
+      		inner sep=0pt] at ($(current page.south east) +(-0.4in,0.75in)$) {
+         		 \ifcsname @logo\endcsname\includegraphics[width=5cm]{\@logo}\fi};
+          
     \end{pgfonlayer}
   \end{tikzpicture}
   \end{minipage}
