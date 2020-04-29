@@ -368,7 +368,7 @@
   \renewcommand*{\proofname}{证明}
   \newcommand{\problemname}{例题}
   \newcommand{\definitionname}{定义}
-  \newcommand{\theoremname}{定理}
+  \newcommand{\theoremname}{公式}
   \newcommand{\axiomname}{公理}
   \newcommand{\postulatename}{公设}
   \newcommand{\lemmaname}{引理}
@@ -425,7 +425,7 @@
   \setlength\parindent{2em}
   \newcommand\figref[1]{\textbf{Figura}~\ref{#1}}
   \newcommand\tabref[1]{\textbf{Tabella}~\ref{#1}}
-  \renewcommand{\chaptername}{Capitolo \thechapter}
+  \renewcommand{\chaptername}{Capitolo \arabic{chapter}}
   \newcommand{\authorname}{\textbf{Autore: }}
   \newcommand{\institutename}{\textbf{Istituto: }}
   \newcommand{\datename}{\textbf{Data: }}
