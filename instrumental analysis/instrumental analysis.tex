@@ -23,6 +23,7 @@
 
 \begin{document}
 
+%首页，前言，目录
 \maketitle
 \frontmatter
 
@@ -33,43 +34,11 @@
 
 \mainmatter
 
+%格式说明
+\input{./subfiles/format_intro.tex}
 
-\chapter*{排版格式介绍}
-\begin{introduction}
-	\item 概念及定义
-	\item 公式
-	\item 笔记
-	\item 例子
-\end{introduction}
+%以下是各章文件
 
-以上是内容提要，大致概括本章的考点。
-
-\section*{几种环境}
-我们将把每一个大问题作为一个section。
-
-排版过程中的定义我们使用如下格式：
-
-\begin{definition*}{概念及定义}{definition}
-	
-\end{definition*}
-
-一些比较重要的公式我们使用如下格式
-\begin{theorem*}{公式/定理}{theo}
-	
-\end{theorem*}
-
-或者直接使用没有定理环境的
-\begin{emptytcb*}{荧光的原理}{}
-	受光激发的分子从第一激发单重态的最低振动能级回到基态所发出的辐射。
-\end{emptytcb*}
-
-因为我们保留了老师提供的提纲的顺序，我们并没有编号，否则会有点乱。
-
-\note 需要补充、解释的我们加在这里
-
-\begin{example}
-	举例我们放在这里
-\end{example}
 
 \input{./subfiles/chp4.tex}
 

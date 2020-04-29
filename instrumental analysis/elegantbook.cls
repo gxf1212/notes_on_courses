@@ -662,7 +662,7 @@
 \renewcommand{\theexam}{\thechapter.\arabic{exam}}
 \newenvironment{example}[1][]{
   \refstepcounter{exam}
-  \par\noindent\heiti{\color{main}{\examplename}}  #1 \kaishu}{
+  \par\noindent\textbf{\color{main}{\examplename\ #1}} \citshape}{
   \par\ignorespacesafterend}
 
 %% Exercise with counter
