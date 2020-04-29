@@ -1,0 +1,50 @@
+\contentsline {chapter}{\numberline {1}Elegant\LaTeX {} 系列模板介绍}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}ElegantBook 更新说明}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}模板安装与更新}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}在线使用模板}{1}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}本地免安装使用}{2}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}发行版安装使用}{2}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}更新问题}{2}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}其他发行版本}{3}{subsection.1.2.5}
+\contentsline {section}{\numberline {1.3}用户作品计划}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}关于提交}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}协作人员招募}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}致谢}{4}{section.1.6}
+\contentsline {section}{\numberline {1.7}捐赠}{4}{section.1.7}
+\contentsline {chapter}{\numberline {2}ElegantBook 设置说明}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}语言模式}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}设备选项}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}颜色主题}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}封面}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}封面个性化}{7}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}封面图}{8}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}徽标}{8}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}自定义封面}{8}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}章标标题}{8}{section.2.5}
+\contentsline {section}{\numberline {2.6}数学环境简介}{8}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}定理类环境的使用}{9}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}其他环境的使用}{9}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}列表环境}{10}{section.2.7}
+\contentsline {section}{\numberline {2.8}参考文献}{10}{section.2.8}
+\contentsline {section}{\numberline {2.9}添加序章}{11}{section.2.9}
+\contentsline {section}{\numberline {2.10}目录选项与深度}{11}{section.2.10}
+\contentsline {section}{\numberline {2.11}章节摘要}{11}{section.2.11}
+\contentsline {section}{\numberline {2.12}章后习题}{12}{section.2.12}
+\contentsline {section}{第\nobreakspace {}二\nobreakspace {}章\tmspace +\thickmuskip {.2777em}习题}{12}{section*.9}
+\contentsline {section}{\numberline {2.13}旁注}{12}{section.2.13}
+\contentsline {chapter}{\numberline {3}字体选项}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}数学字体选项}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}使用 newtx 系列字体}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}连字符}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}宏包冲突}{14}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}中文字体选项}{15}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}方正字体选项}{15}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}其他中文字体}{15}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {4}ElegantBook 写作示例}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Lebesgue 积分}{17}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}积分的定义}{17}{subsection.4.1.1}
+\contentsline {section}{第\nobreakspace {}四\nobreakspace {}章\tmspace +\thickmuskip {.2777em}习题}{19}{section*.12}
+\contentsline {chapter}{\numberline {5}常见问题集}{20}{chapter.5}
+\contentsline {chapter}{\numberline {6}版本更新历史}{22}{chapter.6}
+\contentsline {chapter}{\numberline {A}基本数学工具}{26}{appendix.A}
+\contentsline {section}{\numberline {A.1}求和算子与描述统计量}{26}{section.A.1}
