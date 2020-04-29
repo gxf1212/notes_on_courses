@@ -367,8 +367,8 @@
   \newcommand{\notename}{笔记}
   \renewcommand*{\proofname}{证明}
   \newcommand{\problemname}{例题}
-  \newcommand{\definitionname}{定义}
-  \newcommand{\theoremname}{公式}
+  \newcommand{\definitionname}{}
+  \newcommand{\theoremname}{}
   \newcommand{\axiomname}{公理}
   \newcommand{\postulatename}{公设}
   \newcommand{\lemmaname}{引理}
@@ -539,7 +539,7 @@
         colframe=white,
         arc=0pt,
         outer arc=0pt},
-      separator sign={.},},
+      separator sign={ },},
     defstyle/.style={
       common,
       colframe=main,  
@@ -565,8 +565,8 @@
         \node[anchor=south east, outer sep=0pt] at (\linewidth-width,0) {
           \textcolor{third}{$\spadesuit$}};}},}
 
-  \newtcbtheorem[auto counter,number within=chapter]{definition}{\definitionname}{defstyle}{def}
-  \newtcbtheorem[auto counter,number within=chapter]{theorem}{\theoremname}{thmstyle}{thm}
+  \newtcbtheorem[]{definition}{\definitionname}{defstyle}{def}
+  \newtcbtheorem[]{theorem}{\theoremname}{thmstyle}{thm}
   \newtcbtheorem[auto counter,number within=chapter]{postulate}{\postulatename}{thmstyle}{pos}
   \newtcbtheorem[auto counter,number within=chapter]{axiom}{\axiomname}{thmstyle}{axi}
   \newtcbtheorem[auto counter,number within=chapter]{proposition}{\propositionname}{propstyle}{pro}
@@ -642,7 +642,7 @@
 \renewcommand{\theexam}{\thechapter.\arabic{exam}}
 \newenvironment{example}[1][]{
   \refstepcounter{exam}
-  \par\noindent\textbf{\color{main}{\examplename} \theexam #1 }\rmfamily}{
+  \par\noindent\textbf{\color{main}{\examplename}  #1 }\rmfamily}{
   \par\ignorespacesafterend}
 
 %% Exercise with counter
