@@ -367,13 +367,8 @@
   \newcommand{\notename}{笔记}
   \renewcommand*{\proofname}{证明}
   \newcommand{\problemname}{例题}
-<<<<<<< HEAD
   \newcommand{\definitionname}{}
   \newcommand{\theoremname}{}
-=======
-  \newcommand{\definitionname}{定义}
-  \newcommand{\theoremname}{定理}
->>>>>>> f3e5d7d8d279a7b92dade7edb0329a0c51d43994
   \newcommand{\axiomname}{公理}
   \newcommand{\postulatename}{公设}
   \newcommand{\lemmaname}{引理}
