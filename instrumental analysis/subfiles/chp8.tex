@@ -67,7 +67,7 @@
 \begin{itemize}
 	\item 电机温度高，弧焰中心温度为$5000\sim 7000\mathrm{K}$，有利于试样的蒸发；
 	\item 除石墨电极产生的氰带光谱外，背景比较浅；
-	\item 电弧在电极表面无常游动，且有分馏效应（不同物质因沸点不同而导致蒸发速度不同），重现性比较差；
+	\item 电弧在电极表面无常游动，且有分馏效应\footnote{不同物质因沸点不同而导致蒸发速度不同}，重现性比较差；
 	\item 谱线容易发生自吸收现象。
 	\item 常用于定性分析以及矿石、矿物难熔物质中痕量组分的定量测定。
 \end{itemize}
@@ -204,24 +204,52 @@ Grimm辉光放电管用于固体样品表面分析，能检测$\ce{B,C,Si,P,S}$�
 	\item 使用寿命长于5A·h
 \end{itemize}
 
+工作原理：
+\begin{itemize}
+	\item 由一个由被测元素材料制成的空心阴极和一个由钛、锆、钽或其他材料制作的阳极。
+	\item 玻璃管内由260~1300Pa的惰性气体氖或氩来载带电流，使阴极产生溅射及激发原子发射特征的锐线光谱。
+	\item 云母屏蔽片来使放电限制在阴极腔内，同时使阴极定位。
+	\item 采用低压辉光放电，集中于阴极空腔内。
+	\item 光源调制：使用脉冲供电方式来改善放电特性，同时便于使有用的原子吸收信号与原子化器的滞留发射信号区分开。
+\end{itemize}
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{image/chp8_ICP_lamp}
+	\caption{}
+	\label{fig:chp8icplamp}
+\end{figure}
 
+\subsubsection{原子化器}
+作用：提供能量，使试样干燥、蒸发和原子化。
 
-电机温度高，弧焰中心温度为5000-7000K，有利于试样的蒸发；除石墨电极产生的氰带光谱外，背景比较浅；电弧在电极表面无常游动，且有分馏效应\footnote{不同物质因沸点不同而导致蒸发速度不同}，重现性比较差；谱线容易发生自吸收现象。常用于定性分析以及矿石、矿物难熔物质中痕量组分的定量测定。
+有三种原子化的方法：
 
+\begin{itemize}
+	\item 火焰原子化法
+	\begin{itemize}
+		\item 采用最多的是乙炔-空气火焰，其燃烧稳定，重现性好，噪声低，燃烧速度不太高，温度足够高，对大多数元素有足够灵敏度。
+		\item 氢-空气火焰是氧化性火焰，燃烧速度高于乙炔-空气，优点是背景较弱，透射性好，但温度较低。
+		\item 乙炔-氧化亚氮高温火焰温度在三者中最高，燃烧速度不快，可测定70多种元素。
+	\end{itemize}
+	\item 非火焰原子化法
+	常用管式石墨炉。
+	\begin{itemize}
+		\item 优点是试样原子化在惰性气体和强还原性介质进行，利于氧化物分解和自由原子生成；用样量小，样品利用率高，绝对灵敏度高；固、液试样均可直接进样。
+		\item 缺点是试样组成不均匀性影响较大，背景吸收强，精密度不如火焰原子化法。
+	\end{itemize}
+	\item 低温原子化法
+		利于某些元素（如$\ce{Hg}$）单质或其氢化物（如$\ce{AsH3}$）在低温下的易挥发性，将其导入气体流动吸收池反应出单质或氢化物后，进行原子化。目前通过该方法测定$\ce{Hg, As, Sb, Se, Sn, Bi, Ge, Pb, Te}$等。
+\end{itemize}
 
-%\begin{figure}[!h]
-%	\centering
-%	\includegraphics[width=0.7\linewidth]{image/chp7_circular_VA_example}
-%	\caption{}
-%	\label{fig:chp7circularvaexample}
-%\end{figure}
-%图\ref{fig:chp7circularvaexample}中的几个信号分别对应以下反应：
-%\begin{figure}[!h]
-%	\centering
-%	\includegraphics[width=\linewidth]{image/chp7_circular_VA_example_result}
-%%	\caption{}
-%	\label{fig:chp7circularvaexampleresult}
-%\end{figure}
+\subsubsection{分光器}
+将所需要的共振吸收线分离出来，由入射和出射狭缝、反射镜和色散元件（光栅）组成。
 
+\subsubsection{检测系统}
+\begin{itemize}
+	\item 光电倍增管
+光电倍增管的外壳由玻璃或石英制成，内部抽真空，阴极涂有能发射电子的光敏物质，如$\ce{Sb-Cs}$或$\ce{Ag-O-Cs}$等，在阴极C和阳极A间装有一系列次级电子发射极，即电子倍增极D1、D2 … 等。阴极C和阳极A之间加有约1000V的直流电压，当辐射光子撞击光阴极C时发射光电子，该光电子被电场加速落在第一被增极D1上，撞击出更多的二次电子，依次类推，阳极最后收集到的电子数将是阴极发出的电子数的$10^5\sim 10^8$倍。
+	\item CCD
+电荷耦合器件，优点是速度快、动态响应范围和灵敏度均可能达到或超过光电倍增管，且性能稳定、体积小、耐用。
+\end{itemize}
 
