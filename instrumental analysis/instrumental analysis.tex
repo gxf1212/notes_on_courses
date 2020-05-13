@@ -9,7 +9,7 @@
 \version{v1.0}
 %\bioinfo{自定义}{信息}
 
-%\extrainfo{温柔正确的人总是难以生存，因为这世界既不温柔，也不正确。—— 比企谷八幡}
+%\extrainfo{}
 
 \logo{xjtu.png}
 \classlogo{chem_bio.jpg}
@@ -24,7 +24,11 @@
 \maketitle
 \frontmatter
 
-%\input{./subfiles/preface.tex}
+%作品信息
+\input{./subfiles/info.tex}
+
+%编写说明
+\input{./subfiles/preface.tex}
 
 \tableofcontents
 %\listofchanges
@@ -37,10 +41,15 @@
 %以下是各章文件
 \setcounter{page}{0}
 
-%\input{./subfiles/chp4.tex}
+
+\input{./subfiles/chp1.tex}
 
 \input{./subfiles/chp6.tex}
 \input{./subfiles/chp7.tex}
 \input{./subfiles/chp8.tex}
+
+%发布说明
+\input{./subfiles/post.tex}
+
 
 \end{document}
