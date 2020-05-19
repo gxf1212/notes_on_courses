@@ -8,3 +8,5 @@
 
 > * Submit 14/5 from GQR
 >> * Upload Chapter 3/4/5
+
+# 2020/5/17 第一版教材正式完成
