@@ -30,7 +30,7 @@
 
 大部分细菌采用的分裂方式。
 
-<img src="E:\undergraduate_study\study\courses\高等微生物学\笔记\第六章\6_split.png" alt="6_split" style="zoom:50%;" />
+<img src="6_split.png" alt="6_split" style="zoom:50%;" />
 
 过程（二分裂）：
 
@@ -48,9 +48,9 @@
 
 - 细菌的分裂与调节
 
-  Z环：由FtsZ蛋白组合而成，形成晚于DNA复制，最终使细胞分裂成两个大小相等的子细胞。
+  **Z环**：由FtsZ蛋白组合而成，形成晚于DNA复制，最终使细胞分裂成两个大小相等的子细胞。
   
-  <img src="E:\undergraduate_study\study\courses\高等微生物学\笔记\第六章\6_regulation.png" alt="6_regulation" style="zoom:60%;" />
+  <img src="6_regulation.png" alt="6_regulation" style="zoom:60%;" />
 
 ### 有性繁殖
 
