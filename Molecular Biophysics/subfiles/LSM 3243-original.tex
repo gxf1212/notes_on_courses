@@ -1,0 +1,3921 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\hypertarget{lsm-3243}{%
+\section{LSM 3243}\label{lsm-3243}}
+
+\begin{quote}
+By the end of the course, you should be able to
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Describe protein backbone and side-chain conformations in terms of
+  dihedral angles and interactions
+\item
+  Understand the factors that determine protein conformations
+\item
+  Know common nucleic acid conformations and to understand\\
+  the interactions that stabilize such ordered conformations
+\item
+  Know the composition of cell membrane and understand unique features
+  of membrane proteins
+\item
+  Understand the structures of micelles and bilayers
+\item
+  Understand how small molecules are transported across membranes
+\item
+  Understand basic concepts of spectroscopic techniques: circular
+  dichroism, fluorescence and nuclear magnetic resonance
+\item
+  Be knowledgeable to the application of these techniques to life
+  sciences
+\item
+  State transition
+\item
+  Protein folding
+\item
+  Protein-ligand interaction
+\end{enumerate}
+\end{quote}
+
+\hypertarget{week1-protein-structure}{%
+\subsection{Week1 Protein Structure}\label{week1-protein-structure}}
+
+\hypertarget{introduction}{%
+\subsubsection{Introduction}\label{introduction}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Only L-amino acids are found in natural proteins.
+
+  Look along the \(\ce{H-C_\alpha}\) bond, seeing \underline{CO-R-N in
+  clockwise} indicates L.
+\item
+  Nomenclature of main/side chain atoms: \(\alpha, \beta, \gamma\dots\)
+\end{enumerate}
+
+\hypertarget{polypeptide-chain}{%
+\subsubsection{Polypeptide chain}\label{polypeptide-chain}}
+
+\hypertarget{peptide-bonds}{%
+\paragraph{peptide bonds}\label{peptide-bonds}}
+
+\begin{itemize}
+\item
+  N is partially positive (resonance?) while O is partially negative.
+\item
+  The 6 atoms are coplanar!
+\end{itemize}
+
+\hypertarget{torsion-angle}{%
+\paragraph{torsion angle}\label{torsion-angle}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/1_1.png}
+\caption{1\_1}
+\end{figure}
+
+\begin{itemize}
+\item
+  Look through B-C, if B-A (the nearer) needs to rotate
+  \underline{clockwise} to reach superposition with C-D, the angle is
+  positive.
+\item
+  But in which direction we look through doesn't matter because the
+  result is \underline{the same}.
+\end{itemize}
+
+\hypertarget{backbone-dihedral-angles}{%
+\paragraph{backbone dihedral angles}\label{backbone-dihedral-angles}}
+
+\begin{quote}
+\begin{itemize}
+\item
+  \(\phi : \ce{N-C_{\alpha}}\)
+\item
+  \(\psi : \ce{C_O-C_{\alpha}}\)
+\item
+  \(\omega : \ce{C_O-N}\)
+\end{itemize}
+\end{quote}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/1_2.png}
+\caption{1\_1}
+\end{figure}
+
+The protein structure is almost determined by these angles.
+
+\hypertarget{angle}{%
+\subparagraph{\texorpdfstring{\(\omega\)
+angle}{\textbackslash{}omega angle}}\label{angle}}
+
+It is usually fixed.
+
+\begin{itemize}
+\item
+  For proline, groups in \emph{trans} is less repulsive, but there's
+  \emph{cis}.
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/1_3.png}
+  \caption{1\_1}
+  \end{figure}
+\item
+  For others, \emph{trans} is almost always favored (8 kJ/mol).
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/1_4.png}
+  \caption{1\_1}
+  \end{figure}
+\item
+  However, some X-Pro structures are \emph{cis}
+\end{itemize}
+
+\hypertarget{and--angles-the-ramachandran-mapplot}{%
+\subparagraph{\texorpdfstring{\(\phi\) and \(\psi\) angles, the
+Ramachandran
+Map/Plot}{\textbackslash{}phi and \textbackslash{}psi angles, the Ramachandran Map/Plot}}\label{and--angles-the-ramachandran-mapplot}}
+
+Assumption: No two atoms in a molecule can come any closer than the sum
+of their \textbf{van der Waals radii}. Those who disobeys it are called
+"disallowed conformations".
+
+\begin{itemize}
+\item
+  The plot is similar for most amino acids.
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/1_5.png}
+  \caption{1\_5}
+  \end{figure}
+
+  \begin{itemize}
+  \item
+    There are semi-allowed regions, where the distances are slightly
+    less than the sum of vdw radii. 
+  \item
+    For a certain kind of protein, we can draw the plot according to
+    statistical data. Those who are out of allowed region might be in
+    linkers, turns or loops.
+  \end{itemize}
+\item
+  two special AAs
+
+  \begin{itemize}
+  \item
+    The plot of Gly has a larger area and is centralsymmetric. Both are
+    due to the R group is simply a small H atom.
+  \item
+    \(\phi\) of Pro is fixed to about 60° because of the fixed
+    cyclopentane. \(\psi\) is most favored at about -60° and 160°
+  \item
+    Gly often interrupts \(\alpha\) and \(\beta\). Pro cannot exist in
+    anti-parallel \(\beta\) sheet. Instead, they are often located in
+    turns and loops.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{structure-features-of-typical-conformations}{%
+\subparagraph{structure features of typical
+conformations}\label{structure-features-of-typical-conformations}}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+conformations & approximate \(\phi\) and \(\psi\) (°) & features &
+special structures\tabularnewline
+\midrule
+\endhead
+\(\alpha\) helix & -57, -47 & \vtop{\hbox{\strut 3.6 residues/turn,
+100°/residue}\hbox{\strut CO of i th and NH of i+4 th AA form H
+bond}\hbox{\strut side chains protude radically
+outside}\hbox{\strut helical wheel projection: projection along the axis
+of \(\alpha\) helix. 18 AAs, 5 cycles. Maybe nonpolar AAs are located on
+the same side and polar AAs on the other side }} & 3\textsubscript{10}
+helix: at the termini of a regular \(\alpha\) helix\tabularnewline
+anti-para \(\beta\) sheet & -139, 135 & CO and NH on adjacent chains
+form H bond with each other to stablize & parallel \(\beta\) sheet: a
+little more tortuous H bonds\tabularnewline
+\(\beta\) turn & -\/- & \vtop{\hbox{\strut i+1 is usually Pro and i+2
+usually Gly}\hbox{\strut at the surface of protein (reverse the
+direction)}\hbox{\strut nucleation center of folding}} &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{side-chain-dihedral-angles}{%
+\paragraph{side chain dihedral
+angles}\label{side-chain-dihedral-angles}}
+
+\begin{itemize}
+\item
+  \(\chi_1: \ce{N-C_\alpha-C_\beta-C_\gamma}\),
+  \(\chi_2: \ce{C_\alpha-C_\beta-C_\gamma-C_\delta}\), then goes along
+  the side chain.
+\item
+  Possiblities of \(\chi_1\). All are avoiding overlaping with the main
+  chain. Because \(\ce{C=O}\) is the bulkiest group,
+  \emph{gauche\textsuperscript{+}} (\(\chi_1=-60°\)) is the most
+  favored. (trans is 2nd where \(\chi_1=180°\))
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/1_6.png}
+  \caption{}
+  \end{figure}
+\item
+  \(\chi\) tend to adopt staggered conformations (交错式构象).
+
+  \begin{itemize}
+  \item
+    For aromatic residues, \(\chi_2\) tends to be \(\pm 90°\) to
+    minimize close contact with main chain.
+  \item
+    For residues who form H bond with the environment, the last \(\chi\)
+    (Asp, Asn: \(\chi_2\); Glu: \(\chi_3\)) adopts a wide range since
+    that bond always rotates.
+  \end{itemize}
+
+   For those like Tyr who have two ways on the chain, both sides have
+  the same \(\chi\) number. This is not so meaningful.
+\end{itemize}
+
+\hypertarget{in-addition-1}{%
+\subsubsection{In addition}\label{in-addition-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  tertiary structure: combination of secondary structures
+\item
+  quaternary structure: specific assembly of folded subunits (3rd
+  struct)
+\item
+  examples
+
+  \begin{itemize}
+  \item
+    kertain: coiled coil (\(\alpha\))
+  \item
+    silkworm silk fibers: \(\beta\)
+  \item
+    collagen: left-handed triple helix (Pro)
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{week2-1-interactions-in-proteins}{%
+\subsection{Week2-1 Interactions in
+Proteins}\label{week2-1-interactions-in-proteins}}
+
+\hypertarget{basic-concepts}{%
+\subsubsection{Basic concepts}\label{basic-concepts}}
+
+Internal energy (内能) involves:
+
+\begin{itemize}
+\item
+  kinetic energy
+\item
+  potential energy
+\end{itemize}
+
+Recall three thermodynamical laws.
+
+\begin{quote}
+Life is but a interplay of weak forces (non-bonding interactions).
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+bond & energy (\(\mathrm{kJ/mol}\))\tabularnewline
+\midrule
+\endhead
+ionic (\(\ce{COO-}\) and \(\ce{NH3+}\)) &
+20\textasciitilde{}80\tabularnewline
+hydrogen & 4\textasciitilde{}50, depending on distance and
+orientation\tabularnewline
+dipole (CO and CO) & 5\textasciitilde{}10\tabularnewline
+vdw & 0.5\textasciitilde{}3 per atom pair\tabularnewline
+hydrophobic & 4\textasciitilde{}8 per non-polar groups\tabularnewline
+\bottomrule
+\end{longtable}
+
+functions:
+
+\begin{itemize}
+\item
+  additional strength to stabilize (high level structure)
+\item
+  flexible, interact and perform functions
+\end{itemize}
+\end{quote}
+
+\hypertarget{general-electrostatic-interactions}{%
+\subsubsection{general electrostatic
+interactions}\label{general-electrostatic-interactions}}
+
+\hypertarget{ion-ion}{%
+\paragraph{ion-ion}\label{ion-ion}}
+
+atoms carrying charge
+
+\begin{itemize}
+\item
+  equation
+
+  \[V=\dfrac{Q_iQ_j}{4\pi\varepsilon_0\varepsilon_rr_{ij}}\]
+
+  \begin{itemize}
+  \item
+    \(\varepsilon_r\) : relative dielectric constant
+  \item
+    The force is weaker in water (larger \(\varepsilon_r=78.5\)) than in
+    hydrophobic core (though hard to measure)/other organic solvents.
+  \end{itemize}
+\item
+  salt effect
+
+  \[I=\dfrac{1}{2}\sum c_iq_i^2\\
+  D=\sqrt{\dfrac{\varepsilon_0\varepsilon_rk_BT}{2N_Ae^2I}}\\
+  V=\dfrac{Q_iQ_j}{4\pi\varepsilon_0\varepsilon_r}\dfrac{\exp(-r_{ij}/D)}{r_{ij}}\]
+
+  \(I \uparrow,\ V\downarrow\). "Neutralizing charges"
+\end{itemize}
+
+eg: N and C terminal, side chain (salt bridge)
+
+\hypertarget{ion-dipole}{%
+\paragraph{ion-dipole}\label{ion-dipole}}
+
+\begin{itemize}
+\item
+  ion with groups carrying \underline{no formal charge}
+\item
+  dipole: \textbf{negative \(\rightarrow\) positive} point charge
+\item
+  dipolar molecule: those with dipole moment (\(\ce{H2O, CO}\))
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/2_1.png}
+\caption{2\_1}
+\end{figure}
+
+\[V=\dfrac{Q_i\delta}{4\pi\varepsilon_0\varepsilon_r}(\dfrac{1}{r_{i-}}-\dfrac{1}{r_{i+}})=\dfrac{Q_i\delta}{4\pi\varepsilon_0\varepsilon_r}\cdot\dfrac{r_{i+}-r_{i-}}{r_{i-}r_{i+}}\approx\dfrac{Q_i\mu}{4\pi\varepsilon_0\varepsilon_rr_{ij}^2}\]
+
+eg: disolve salt. \(\Delta H=E_{lattice}-E_{hydration}\), hydration: ion
+with water.
+
+entropy may increase.
+
+\hypertarget{dipole-dipole}{%
+\paragraph{dipole-dipole}\label{dipole-dipole}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/2_2.png}
+\caption{2\_2}
+\end{figure}
+
+\[V=\dfrac{1}{4\pi\varepsilon_0\varepsilon_r}\left[\dfrac{\mu_i\cdot\mu_j}{r_{ij}^3}-\dfrac{3(\mu_i\cdot r_{ij})\cdot(\mu_j\cdot r_{ij})}{r_{ij}^5}\right]\]
+
+The potential depends on the relative orientation. The system tends to
+lower the energy.
+
+eg:
+
+\begin{itemize}
+\item
+  d-d interaction: \(\ce{H2O}>\ce{HCl}\)
+\item
+  interaction between \(\alpha\) helices (accumulation of peptide bond
+  polarity), important for attracting charged molecules and enhances
+  reactions.
+\end{itemize}
+
+\hypertarget{van-der-waals}{%
+\subsubsection{van der Waals}\label{van-der-waals}}
+
+here refers to dispersion forces
+
+\begin{itemize}
+\item
+  features
+
+  \begin{itemize}
+  \item
+    temporary dipole, induced non-uniform e\textsuperscript{-}
+    distribution
+  \item
+    contact distance, L-J potential
+  \end{itemize}
+\item
+  important for molecules both with and without permanent dipoles
+\item
+  significant for large molecules
+\end{itemize}
+
+\hypertarget{hydrogen-bond-1}{%
+\subsubsection{hydrogen bond}\label{hydrogen-bond-1}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/2_5.png}
+\caption{2\_5}
+\end{figure}
+
+\begin{itemize}
+\item
+  features
+
+  \begin{itemize}
+  \item
+    short range: \(r_{bond}\ll r<R_{vdw}\)
+  \item
+    directionality: 120\textasciitilde{}180°
+  \end{itemize}
+\item
+  affects secondary structure \& recognition, but not
+  dominating/determining folding/assembly
+\item
+  only intramolecular H bonds in the interior of a protein are favorable
+  in presence of competition from water
+\end{itemize}
+
+actually vdW and H bond are both special cases of dipole-dipole
+interaction
+
+\hypertarget{hydrophobic-interaction}{%
+\subsubsection{hydrophobic interaction}\label{hydrophobic-interaction}}
+
+Oil doesn't mix with water. The molecules attract themselves more than
+each other. Thus mixing water and oil is only a process where water
+molecules form a cage (more ordered, to strengthen interaction) rather
+than thorough mixing.
+
+Their attraction increases (\(\Delta H<0\)) but the deterministic factor
+is \(\Delta S(\ce{H2O})<0\). To minimize the entropy decrease,
+hydrophobic parts tend to gather to make their volume lowest and water
+molecules to form a cage least.
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/2_6.jpg}
+\caption{2\_6}
+\end{figure}
+
+\hypertarget{disulfide-bonds}{%
+\subsubsection{Disulfide bonds}\label{disulfide-bonds}}
+
+Fold first, then disulfide bonds!
+
+\hypertarget{week2-2-nucleic-acid-structure}{%
+\subsection{Week2-2 Nucleic Acid
+Structure}\label{week2-2-nucleic-acid-structure}}
+
+\hypertarget{component}{%
+\subsubsection{component}\label{component}}
+
+\begin{itemize}
+\item
+  pentose (difference)
+\item
+  base
+\item
+  phosphate (phosphoester bond)
+\end{itemize}
+
+\hypertarget{conformation}{%
+\subsubsection{conformation}\label{conformation}}
+
+\begin{itemize}
+\item
+  bases point inwards
+\item
+  plots of torsion angle
+
+  \begin{itemize}
+  \item
+    main chain: extended (trans, 180°)
+  \item
+    \(\chi\): anti (0°)
+  \end{itemize}
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/2_3.png}
+  \caption{2\_3}
+  \end{figure}
+\end{itemize}
+
+\hypertarget{secondary-structure}{%
+\subsubsection{secondary structure}\label{secondary-structure}}
+
+\hypertarget{double-helix}{%
+\paragraph{double helix}\label{double-helix}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+helix & (B) DNA & (\(\alpha\)) protein\tabularnewline
+\midrule
+\endhead
+units per turn & 10.5 (10) & 3.6\tabularnewline
+degree per unit & 36° & 100°\tabularnewline
+rise per unit & 0.34 nm &\tabularnewline
+diameter & 22 nm &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{grooves}{%
+\paragraph{grooves}\label{grooves}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/2_4.png}
+\caption{2\_4}
+\end{figure}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+grooves & major & minor\tabularnewline
+\midrule
+\endhead
+part of base & more & less\tabularnewline
+actual H bonds & fewer & more\tabularnewline
+bind & proteins & drugs\tabularnewline
+\bottomrule
+\end{longtable}
+
+Most proteins perform non-sequence-specific binding, switching on/off
+gene expression.
+
+\hypertarget{forces-to-stablize}{%
+\subsubsection{forces to stablize}\label{forces-to-stablize}}
+
+\hypertarget{hydrogen-bond-2}{%
+\paragraph{hydrogen bond}\label{hydrogen-bond-2}}
+
+Waston-Crick base pairs vs unusual pairs
+
+fraction of GC \(\to\) melting temperature. AT: local unwinding
+
+\hypertarget{stacking-interaction}{%
+\paragraph{stacking interaction}\label{stacking-interaction}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/2_7-2.png}
+\caption{2\_7}
+\end{figure}
+
+GC superimposition
+
+is a conbination of
+
+\begin{itemize}
+\item
+  vdW, where 0.34 nm is the optimal distance
+\item
+  dipole-dipole, same direction \(\Leftrightarrow\) repel
+\end{itemize}
+
+bases on the next level rotate 36° as a balance
+
+\hypertarget{electrostatic-interaction}{%
+\paragraph{electrostatic interaction}\label{electrostatic-interaction}}
+
+negative charged (-1 per bp) phosphate backbone: repulsion, controls
+distance between two strands
+
+\begin{itemize}
+\item
+  low-salt: (phosphates) try to be trans; bases farther, prefer single
+  strand (PCR)
+\item
+  high-salt: screen (掩蔽) them to form double strand DNA
+\end{itemize}
+
+DNA prefers to take helix to 1) form stacking 2) avoid repulsion
+
+\hypertarget{with-water}{%
+\paragraph{with water}\label{with-water}}
+
+Water forms H bond with bases, pentoses and phosphate groups. The major
+and minor grooves potentially form same amount of H bonds. But due to
+larger space, the major groove needs more water molecules. This is the
+cause of \textbf{entropy loss}.
+
+As a result, the minor groove forms \textbf{more H bonds} with water,
+i.e. more enthalpy gain. Thus, it can trap more water molecules (a
+cluster that may not form H bonds) and compensate the entropy loss. In
+contrast, the major groove only maintains one shallow layer of water.
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/2_8.png}
+\caption{2\_8}
+\end{figure}
+
+spine of hydration
+
+\hypertarget{other}{%
+\subsubsection{other}\label{other}}
+
+\begin{itemize}
+\item
+  tightness: Z form (left-handed, seq-specific)\textgreater{}A form
+  (seq-specific/RNA, high salt)\textgreater{}B form (normal)
+\item
+  RNA structure
+\end{itemize}
+
+\hypertarget{week3-1-hw}{%
+\subsection{Week3-1 HW}\label{week3-1-hw}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  interactions
+
+  \begin{longtable}[]{@{}lll@{}}
+  \toprule
+  & protein & nucleic acid\tabularnewline
+  \midrule
+  \endhead
+  interactions & \vtop{\hbox{\strut covalent bond
+  (disulfide)}\hbox{\strut electrostatic (ion and
+  dipole)}\hbox{\strut vdW}\hbox{\strut H
+  bond}\hbox{\strut hydrophobic}} & \vtop{\hbox{\strut covalent
+  bond}\hbox{\strut H bond}\hbox{\strut stacking (vdW,
+  hydrophobic)}\hbox{\strut electrostatic}}\tabularnewline
+  secondary & \textbf{H bond} & \textbf{H bond}
+  (stacking)\tabularnewline
+  tertiary & H bond, \textbf{hydrophobic} & H bond,
+  \textbf{stacking}\tabularnewline
+  \bottomrule
+  \end{longtable}
+\item
+  heat and salt?
+
+  salt stablizes the backbone, pushing the phosphate groups nearer and
+  thus harder to be denatured by heat.
+
+  a multi-layer structure:
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/2_9.png}
+\end{enumerate}
+
+\hypertarget{week3-2-structure-of-cell-membrane}{%
+\subsection{Week3-2 Structure of Cell
+Membrane}\label{week3-2-structure-of-cell-membrane}}
+
+functions of cell membranes
+
+\begin{itemize}
+\item
+  compartmentalization
+\item
+  selective permeable
+\item
+  communication, signal transduction
+\item
+  organize activities, energy production
+\end{itemize}
+
+\hypertarget{lipids}{%
+\subsubsection{lipids}\label{lipids}}
+
+\hypertarget{types}{%
+\paragraph{types}\label{types}}
+
+\begin{itemize}
+\item
+  glycerophospholipids
+\item
+  sphingolipids
+\item
+  cholesterol
+\end{itemize}
+
+\hypertarget{features}{%
+\paragraph{features}\label{features}}
+
+\begin{itemize}
+\item
+  \textbf{amphiphilic}
+\item
+  different content in different species or organs
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/3_1.png}
+\caption{3\_1}
+\end{figure}
+
+\hypertarget{lipids-on-the-membrane}{%
+\paragraph{lipids on the membrane}\label{lipids-on-the-membrane}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  assymetric distribution (in two layers)
+
+  \begin{itemize}
+  \item
+    negative charged phospholipids tend to point at cytosol while the
+    neutral ones point at extracellular space
+
+     when cell undergoes apoptosis, POPS goes to the outer membrane because entropy increases.
+  \end{itemize}
+\item
+  random distribution (in the same layer)
+
+  \begin{itemize}
+  \item
+    lipids are randomly distributed, and swim.. (bulk phase)
+
+    \begin{itemize}
+    \item
+      \textbf{vdW forces are not strong enough to hold lipids together}
+    \item
+      hydrophobic effect drives the lipid to assemble, so there must be
+      water
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/3_2.png}
+\caption{3\_2}
+\end{figure}
+
+\hypertarget{lipid-rafts}{%
+\paragraph{lipid rafts}\label{lipid-rafts}}
+
+\begin{itemize}
+\item
+  sphingolipids have longer and straighter fatty acids
+
+  thus have bigger vdW forces to hold themselves together (transiently)
+
+  \begin{itemize}
+  \item
+    glycerophospholipids: about 13?
+  \end{itemize}
+\item
+  cholesterol can hold more lipid molecules
+
+  \begin{itemize}
+  \item
+    it's also very "hydrophobic"
+  \item
+    it interacts with fatty acids in both sides of the plane, and has
+    bigger surface area.
+  \item
+    its ring is a rigid structure that makes lipid rafts stable.
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/3_3.png}
+\caption{}
+\end{figure}
+
+They assembly into lipid rafts, which
+
+\begin{itemize}
+\item
+  are thicker (longer) than other parts of the membrane;
+\item
+  are more resistant to detergents
+\item
+  accommodate and gather proteins for specific functions like singaling
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/3_4.png}
+\caption{}
+\end{figure}
+
+\hypertarget{proteins}{%
+\subsubsection{proteins}\label{proteins}}
+
+ratio \(\uparrow\), function \(\uparrow\)
+
+types:
+
+\url{https://en.wikipedia.org/wiki/Membrane_protein} for figures
+
+\url{https://www.expasy.org/resources/protscale} hydrophobicity plot
+
+hydrophobic R chains point outwards (maybe hydrophilic inwards)
+
+\begin{itemize}
+\item
+  integral (整合)
+
+  \begin{itemize}
+  \item
+    one or multiple \textbf{transmembrane} segments
+  \item
+    \(\alpha\) helix or \(\beta\) barrel
+  \item
+    some are not trans-membrane
+  \end{itemize}
+\item
+  peripheral (外周)
+
+  \begin{itemize}
+  \item
+    no covalent bonds, only \textbf{non-covalent} bonds
+
+    \begin{itemize}
+    \item
+      electrostatically-\/-\/-with polar head
+    \item
+      terminal hydrophobic group-\/-\/-with bilayer core
+    \item
+      or bound to an integral protein
+    \end{itemize}
+
+     either outside and inside the membrane
+  \end{itemize}
+\item
+  anchored (锚定)
+
+  \begin{itemize}
+  \item
+    \textbf{covalently} bond to the lipids
+  \item
+    GPI-anchored proteins (G: glycosylphosphatidylinositol-linked)
+
+    \begin{itemize}
+    \item
+      protein-\/-\/-phosphoethanolamine-\/-\/-tetrasaccharide-\/-\/-inositol-\/-\/-
+
+      \begin{itemize}
+      \item
+        where lipase C functions
+      \end{itemize}
+    \item
+      phosphate-\/-\/-diacylglycerol, which is a part of bilayer
+    \end{itemize}
+  \item
+    function: enzyme, antigen, adhesion
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/3_5.jpg}
+\caption{}
+\end{figure}
+
+\hypertarget{micelles}{%
+\subsubsection{micelles}\label{micelles}}
+
+\url{https://en.wikibooks.org/wiki/Structural_Biochemistry/Lipids/Micelles}
+
+\begin{itemize}
+\item
+  as the concentration of detergent/lipid molecules rises (over Critical
+  Micelle Concentration, CMC), they are no more a layer on the surface,
+  but forms micelles (胶束).
+\item
+  structure
+
+  \begin{itemize}
+  \item
+    SDS can be seen as a cone (圆锥) model
+
+     which is due to electrostatic repulsion on the heads 
+
+    \begin{itemize}
+    \item
+      driven by hydrophobic interaction, they form a sphere
+    \item
+      when concentration get higher, the sphere get bigger and water
+      enter inside, thus hydrophobic interaction is disrupted.
+    \end{itemize}
+  \item
+    DPC is a zwitterion but has to be parallel (replusion direction) to
+    avoid contacting hydrophobic groups.
+  \item
+    triglyceride may form a cylinder, which favours the formation of
+    bilayer.
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/3_6.jpg}
+\caption{}
+\end{figure}
+
+structure of molecules
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/3_7.jpg}
+\caption{}
+\end{figure}
+
+structure of SDS micelles
+
+\hypertarget{lipid-mobility}{%
+\subsubsection{lipid mobility}\label{lipid-mobility}}
+
+\begin{itemize}
+\item
+  the more lipids are ordered/the closer lipids are placed, fluidity
+  \(\downarrow\), melting point \(\uparrow\)
+\item
+  Bilayer has two phases. gel phase: solid; fluid phase: liquid.
+\item
+  saturated FAs adopt all-trans to achieve the closest contact, but all
+  bonds are freely rotatable, especially those which are near the center
+  of bilayer.
+
+  \begin{itemize}
+  \item
+    gauche-\/-trans-\/-gauche makes a kink
+  \item
+    cis-double bond makes a bend
+  \end{itemize}
+
+  which reduces the packing density
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/3_8.png}
+  \caption{}
+  \end{figure}
+\item
+  cholesterol
+
+  \begin{itemize}
+  \item
+    block motions
+  \item
+    disrupt ordered structure
+  \end{itemize}
+
+  which makes a \underline{balance}, modulating the fluidity.
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/3_9.jpg}
+  \caption{}
+  \end{figure}
+
+  High conc cholesterol may abolish phase transition, keeping the
+  membrane of eg. heart cells in cold blood animals functioning at a low
+  tempearture.
+\item
+  other motions
+
+  \begin{itemize}
+  \item
+    lateral (侧向): much faster in fluid phase
+  \item
+    flip-flop: very slow
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{week4-1-membrane-equilibrium}{%
+\subsection{Week4-1 Membrane
+Equilibrium}\label{week4-1-membrane-equilibrium}}
+
+\hypertarget{terms}{%
+\subsubsection{terms}\label{terms}}
+
+\begin{itemize}
+\item
+  extensive property: depend on the size or amount. additive
+
+  \begin{itemize}
+  \item
+    intensive property: e.g. density. 
+  \end{itemize}
+\item
+  for intensive properties, define partial molar quantity:
+  \(\overline{Y_i}=\left(\frac{\partial Y}{\partial n_i}\right)_{T,P,n_j}\)
+
+  \begin{itemize}
+  \item
+    then we can apply the additive rule.
+  \end{itemize}
+\item
+  chemical potential: PMQ of Gibbs free energy
+
+  \[\mu_i=\mu_i^0+RT\ln a_i\]
+\end{itemize}
+
+\hypertarget{chemical-potential-equlibrium}{%
+\subsubsection{chemical potential
+equlibrium}\label{chemical-potential-equlibrium}}
+
+\begin{itemize}
+\item
+  for an open system (where \(n\) may vary but \(\mu\) doesn't vary
+  under constant \(T,P\))
+
+  \[\mathrm{d}G=\sum_i \mu_i\mathrm{d} n_i\]
+\item
+  for a multiphase system \underline{in equilibrium}, which is separated
+  by semi-permeable membrane
+
+  \begin{itemize}
+  \item
+    for each component \(\mu_i\) should be the same and constant in all
+    systems 
+  \item
+    only when this component is permeable. (\(\mathrm{d} n_i\neq 0\)) 
+  \item
+    when not in equilibrium, \(\mu\) may change first. But we only
+    calculate about the equilibrium state 
+  \end{itemize}
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/4_1.png}
+  \caption{}
+  \end{figure}
+
+  dialysis equilibrium
+\item
+  when equlibrium is broken
+
+  If only one side (\(\alpha\)) has solute A of molar concentration
+  \(C\) that cannot pass through semi-permeable membrane. On the other
+  side (\(\beta\)) is pure water with the same \(T\) and \(P\) (pressure
+  of amtosphere on the liquid).
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/4_2.png}
+  \caption{4\_2}
+  \end{figure}
+
+  \begin{itemize}
+  \item
+    equilibrium can never be reached. \textbf{Osmotic pressure} is
+    generated. 
+  \item
+    Imagine we change the pressure to achieve equlibrium, with
+    approximation, we can get
+
+    \[\pi=P^\alpha-P^\beta=RTC\]
+  \item
+    the solute can be either marcomolecules or small molecules
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{donnan-effect}{%
+\subsubsection{Donnan effect}\label{donnan-effect}}
+
+the ion may start transfering, but have to keep electrical neutrality.
+
+Donnan effect: when one side contains impermeable charged molecule,
+concentrations of ions A,B in different side are different.
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/4_3.png}
+\caption{4\_3}
+\end{figure}
+
+Write the chemical potential
+
+\[\mu_1=\mu_{\ce{A}}^0+\mu_{\ce{B}}^0+RT\ln C_{\ce{A}}^\alpha+RT\ln C_{\ce{B}}^\alpha\\
+\mu_2=\mu_{\ce{A}}^0+\mu_{\ce{B}}^0+RT\ln C_{\ce{A}}^\beta+RT\ln C_{\ce{B}}^\beta\\\]
+
+At equlibrium, \(\mu_1=\mu_2\)
+
+\[C^\alpha_{A}\cdot C^\alpha_{B}=C^\beta_{A}\cdot C^\beta_{B}\]
+
+Note \(z\) is the charge and \(C_M\) is concentration of the
+marcomolecule. According to electrical neutrality, let
+
+\[C^\alpha_{A}+zC_M=C^\alpha_{B}=a\\
+C^\beta_{A}= C^\beta_{B}=b\\
+r=\dfrac{zC_M}{2C^\beta_{A}}\]
+
+then solve it
+
+\[r_D=\dfrac{C^\beta_{A}}{C^\alpha_{A}}=\dfrac{C^\alpha_{B}}{C^\beta_{B}}=r+\left(r^2+1\right)^{0.5}\]
+
+If A is \(\ce{H+}\), then
+\(\mathrm{pH}^\alpha-\mathrm{pH}^\beta=\log r_D\)
+
+\hypertarget{combined-effect-membrane-potential}{%
+\subsubsection{combined effect: membrane
+potential}\label{combined-effect-membrane-potential}}
+
+Consider this situation. \(\ce{Na+}\) won't pass through because of the
+electric potential. Chemical potential equilibrium can never be reached,
+as in the example about osmotic pressure. This system looks like
+\underline{the cell} where no ions can freely pass through.
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/4_4.png}
+\caption{}
+\end{figure}
+
+Part two of this section refers to the effect of different
+concentration, while part three refers to the effect of charged
+molecules.
+
+Define electrochemical potential as their combination
+
+\[\mu^\prime=\mu+Zf\phi\]
+
+where \(Z\) is charge, \(f\) is Faraday constant, \(\phi\) is the
+relative electric potential.
+
+At equlibrium, for single ion A on one side:
+
+\[\Delta\varphi=\varphi^{in}-\varphi^{out}=-\dfrac{RT}{Zf}\ln\dfrac{c^{in}}{c^{out}}\]
+
+Ionic concentration difference and membrane potential are generated
+simultanously. Maintaining a concentration difference, we get membrane
+potential. Still, those which cannot pass through the membrane don't
+contribute.
+
+For multiple ions
+(\href{https://en.wikipedia.org/wiki/Goldman_equation}{reference}):
+
+\[\Delta\varphi=\varphi^{in}-\varphi^{out}=-\dfrac{RT}{Zf}\ln\dfrac{\sum\limits_{positive} p_ic_{i}^{in}+\sum\limits_{negative} p_jc_{j}^{out}}{\sum\limits_{positive} p_ic_{i}^{out}+\sum\limits_{negative} p_jc_{j}^{in}}\]
+
+where \(p_i\) is permeability. The cell mainly regulates permeability
+and sometimes concentration.
+
+\begin{quote}
+summary:
+
+By putting charged marcomolecules and selectively letting ions pass
+through, the cell sets up the difference of concentration of ions as
+well as the electrical potential, acting as the fundation of activities
+like neural signaling.
+\end{quote}
+
+\hypertarget{in-addition-2}{%
+\subsubsection{in addition}\label{in-addition-2}}
+
+inference of osmotic pressure
+
+\[\mu_1^\alpha=\mu_1^0(T,P^\alpha)+RT\ln c_1^\alpha y_1^\alpha\\
+\mu_2^\beta=\mu_2^0(T,P^\beta)+RT\ln c_2^\beta y_2^\beta\]
+
+where \(c\) is the molar concentration of water. Here it's approximately
+the molar ratio (?)
+
+Due to \(G=U+PV-TS\), \(\mu=V_0P\), \(V_0\) is molar volume of water.
+
+When equilibrium, \(\mu_1^\alpha=\mu_2^\beta\). Assume \(y=1\) So
+
+\[\mu_1^0(T,P^\alpha)-\mu_2^0(T,P^\beta)=V_0(P^\alpha-P^\beta)=-RT\ln\dfrac{c_1^\alpha}{c_2^\beta}\]
+
+\hypertarget{week4-2-hw}{%
+\subsection{Week4-2 HW}\label{week4-2-hw}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Why do most transmembrane helices contain more than the minimum number
+  of residues?
+
+  Prof: Usually helices form other H bonds with water except for the
+  \(\ce{C=O...H-N}\). But now the terminal few residues have to protrude
+  out of the bilayer and form H bond with water to stabilize if the head
+  group cann't.
+
+  other reasons might be:
+
+  \begin{itemize}
+  \item
+    the helices are not perpendicular to the bilayer...
+  \item
+    a few residues are used to anchor in the bilayer...
+  \end{itemize}
+\item
+  function of cholesterol:
+
+  \begin{itemize}
+  \item
+    the formation of lipid rafts
+  \item
+    modulate the fluidity
+  \end{itemize}
+\item
+  calculation
+
+  try to calculate transfer
+\end{enumerate}
+
+\hypertarget{week5-1-membrane-transport}{%
+\subsection{Week5-1 Membrane
+Transport}\label{week5-1-membrane-transport}}
+
+\hypertarget{ionic-composition}{%
+\subsubsection{ionic composition}\label{ionic-composition}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+& main cation & main anion\tabularnewline
+\midrule
+\endhead
+intracellular & K & organic phosphates and acids\tabularnewline
+intercellular & Na & Cl\tabularnewline
+blood plasma & Na & Cl\tabularnewline
+\bottomrule
+\end{longtable}
+
+They are related to diseases.
+\href{http://book.bionumbers.org/what-are-the-concentrations-of-different-ions-in-cells}{reference
+here}
+
+\hypertarget{principle-1}{%
+\subsubsection{Principle }\label{principle-1}}
+
+\begin{itemize}
+\item
+  mostly decided by its soluablity in oil
+\item
+  also highly depends on the size
+\end{itemize}
+
+\hypertarget{diffusion-through-a-protein-free-lipid-bilayer}{%
+\paragraph{diffusion through a protein-free lipid
+bilayer}\label{diffusion-through-a-protein-free-lipid-bilayer}}
+
+\href{https://www.ncbi.nlm.nih.gov/books/NBK26815/}{reference here}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/5_0.png}
+\caption{5\_0}
+\end{figure}
+
+\begin{itemize}
+\item
+  can diffuse:
+
+  \begin{itemize}
+  \item
+    gas: freely pass
+  \item
+    hydrophobic: able to diffuse
+  \item
+    small polar: much slower
+  \end{itemize}
+\item
+  cannot diffuse: ions (charged) and large polar molecules (like
+  zwitterions)
+
+  \begin{itemize}
+  \item
+    ions: hydrated, making it less soluable
+  \item
+    also: may be attracted by the head group
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{classification}{%
+\paragraph{classification}\label{classification}}
+
+\begin{itemize}
+\item
+  mediated and non-mediated (gas, steriods...)
+\item
+  passive and active
+\end{itemize}
+
+\hypertarget{mediated-transport}{%
+\subsubsection{mediated transport }\label{mediated-transport}}
+
+ionophores (离子载体): small molecules dissolved in the bilayer
+
+\hypertarget{carrier}{%
+\paragraph{carrier}\label{carrier}}
+
+\hypertarget{action-mechanisms}{%
+\subparagraph{action mechanisms}\label{action-mechanisms}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/5_3.png}
+\caption{5\_3}
+\end{figure}
+
+\begin{itemize}
+\item
+  reversible conformation change. 
+\item
+  the direction is determined by the direction of gradient
+\item
+  must just fit the site! 
+\item
+  may need energy (light; ATP; other "downhill" potential)
+\end{itemize}
+
+\hypertarget{classes}{%
+\subparagraph{classes}\label{classes}}
+
+\begin{itemize}
+\item
+  uniport: only one, driven by gradient
+\item
+  symport: one substrate driven by the gradient of another
+\item
+  antiport: another substrate in reverse direction
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/5_1.png}
+\caption{5\_1}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/5_11.png}
+\caption{5\_11}
+\end{figure}
+
+examples
+
+\begin{itemize}
+\item
+  valinomycin (缬氨霉素) carrying \(\ce{K+}\)
+
+  \begin{itemize}
+  \item
+    takes the ion and move to the other side (size-specific)
+  \item
+    can only bind to \(\ce{K+}\) rather than \(\ce{Na+}\)
+  \end{itemize}
+\item
+  lactose permease
+\end{itemize}
+
+\hypertarget{channel}{%
+\paragraph{channel}\label{channel}}
+
+examples
+
+\begin{itemize}
+\item
+  gramicidin (短杆菌肽): its dimer helices allows \(\ce{K+}\) and
+  \(\ce{Na+}\) to pass through
+\item
+  \(\ce{K+}\) channel:
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/5_2.png}
+  \caption{}
+  \end{figure}
+
+  \begin{itemize}
+  \item
+    acidic residues: attracting \(\ce{K+}\) and exclude anions
+  \item
+    \(\ce{C=O}\) groups: coordinate with \(\ce{K+}\) and replace its
+    water molecules (cannot for \(\ce{Na+}\))
+  \item
+    the first one pushes the second out
+  \end{itemize}
+\item
+  aquaporins
+
+  \begin{itemize}
+  \item
+    about 2.8 angstroms the narrowest, only allowing water molecules to
+    passage
+  \end{itemize}
+\end{itemize}
+
+Spectroscopic Tools
+
+\begin{verbatim}
+categories
+
+- electromagnatic wave
+  - scatter
+    - static
+    - dynamic
+  - absorption
+    - UV/Vis
+    - circular dichroism
+    - IR
+  - fluorescence
+    - excitation
+    - emission
+    - anisotropy
+- nucleus
+  - NMR
+\end{verbatim}
+
+\hypertarget{week7-1-circular-dichroism}{%
+\subsection{Week7-1 Circular
+Dichroism}\label{week7-1-circular-dichroism}}
+
+\begin{itemize}
+\item
+  \href{https://www.youtube.com/watch?v=F8VGbgi1lwQ}{Circular Dichroism
+  (CD) spectroscopy - YouTube}
+\end{itemize}
+
+\hypertarget{light-and-polarization}{%
+\subsubsection{Light and Polarization}\label{light-and-polarization}}
+
+is a kind of electromagnetic wave with mutually perpendicular
+oscillating electric and magnetic field.
+
+Natural light is un polarized, i.e. ocscillating at all directions.
+
+Two linearly polarized lights combine into linear/circular/elliptical
+polarized light.
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7_1.png}
+\caption{7\_1}
+\end{figure}
+
+\hypertarget{principle-of-cd}{%
+\subsubsection{Principle of CD}\label{principle-of-cd}}
+
+Linear polarized light can be seen as a combination of two circular
+polarized lights with different direction but same amplitude and initial
+phase.
+
+Optically active substances (containing chiral center) has different
+absorbance to right/left-handed light (change \(A\) and \(\phi\)). The
+emission light would be elliptically polarized light.
+
+\begin{quote}
+\textbf{Ellipticity} (椭圆度)
+
+\[\theta=\arctan \dfrac{A_{min}}{A_{max}}\]
+
+where \(A_{min}\) and \(A_{max}\) is the minimum and maximum amplitude
+of \textbf{the difference} (also elliptical) of two emission lights.
+Unit is degree.
+
+\textbf{Molar Ellipticity} (\(\mathrm{deg\cdot cm^2/dmol}\))
+
+\[[\theta]=100\theta/cL\]
+
+where \(c\) (mol/L) is concentration and \(L\) (cm) is light path
+length.
+\end{quote}
+
+notes on experiments:
+
+\begin{itemize}
+\item
+  usually for 0.1 mM DNA/protein in 1cm cuvette, \(\theta\) is
+  0.01\textasciitilde{}0.1 degree. usually use 0.2\textasciitilde{}0.5
+  mg/mL protein
+\item
+  volume: 20 \(\mu\)L\textasciitilde{}1 mL; buffer: 10mM phosphate
+  (lower interference)
+\item
+  \(\ce{Cl-}\) has strong absorbance at wavelength \textless{} 200 nm
+\end{itemize}
+
+features:
+
+\begin{itemize}
+\item
+  CD occurs only when \(\varepsilon\neq0\) (molar extinction
+  coefficient).
+\item
+  CD can be either positive or negative
+\item
+  More averaged structure (AGCT; denatured) causes less intense signal;
+  more asymmetry more intense
+\end{itemize}
+
+\hypertarget{application-1}{%
+\subsubsection{Application}\label{application-1}}
+
+\begin{itemize}
+\item
+  determine protein/DNA \underline{overall secondary structure}, study
+  their \underline{conformational change} as well as kinetics
+\item
+  study the effect of ligand \underline{binding, mutation} of protein.
+  study the folding and denaturation
+\end{itemize}
+
+\hypertarget{cd-of-dna}{%
+\paragraph{CD of DNA}\label{cd-of-dna}}
+
+features
+
+\begin{itemize}
+\item
+  high salt B form: almost 0 at 280 nm
+\item
+  no water A form: intense positive at 190 nm
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7_2.png}
+\caption{7\_2}
+\end{figure}
+
+study conformational change: change temperature or water/organic
+solvent, plot spectrums together.
+
+DNA SS is not so interesting as that of RNA/protein.
+
+\hypertarget{cd-of-protein}{%
+\paragraph{CD of protein}\label{cd-of-protein}}
+
+\hypertarget{regions}{%
+\subparagraph{regions}\label{regions}}
+
+\begin{itemize}
+\item
+  far-UV: 180\textasciitilde{}250 nm, 2° structures
+\item
+  near-UV: 250(230?)\textasciitilde{}300 nm, 3° structure, if
+  Phe/Tyr/Trp is in asymmetric environment (often folded structure)
+\end{itemize}
+
+\hypertarget{standard-curve}{%
+\subparagraph{standard curve}\label{standard-curve}}
+
+eg. poly-Lys in different environment
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7_3.png}
+\caption{7\_3}
+\end{figure}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+SS type & maximum & minimum\tabularnewline
+\midrule
+\endhead
+\(\alpha\)-helix & 193 nm & 222,208 nm\tabularnewline
+\(\beta\)-sheets & 198 nm & 213 nm\tabularnewline
+random & almost 0 \textgreater{} 220 & negative
+190\textasciitilde{}200\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{application-in-protein-study}{%
+\paragraph{application in protein
+study}\label{application-in-protein-study}}
+
+\hypertarget{determine-ss-fraction}{%
+\subparagraph{determine SS fraction}\label{determine-ss-fraction}}
+
+For any protein, use
+
+\[\Theta=f_\alpha\Theta_\alpha+f_\beta\Theta_\beta+f_u\Theta_u\]
+
+to fit the \(\Theta-\lambda\) curve to find the parameters, i.e. the
+content of all SS.
+
+\begin{itemize}
+\item
+  results are good for \(\alpha\)-helix and tolerable for the other two
+  (only qualititively)
+\item
+  may also use combination of other proteins with known content as basis
+  (extract standard curve from them)
+\end{itemize}
+
+\hypertarget{measure-structural-properties-under-various-conditions}{%
+\subparagraph{measure structural properties under various
+conditions}\label{measure-structural-properties-under-various-conditions}}
+
+\begin{itemize}
+\item
+  change temperature/ligand concentration/pH/organic solvent/substrate
+\item
+  record the change of a typical wavelength
+\item
+  fit the curve to determine \(T_m\), \(K_d\), etc.
+\end{itemize}
+
+\begin{quote}
+\begin{itemize}
+\item
+  usually the one where \underline{the biggest difference} between
+  native and final state occured. 
+\item
+  For \(\alpha\)-helix, can pick 222 nm, often avoid 200 nm
+\end{itemize}
+\end{quote}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7_4.png}
+\caption{}
+\end{figure}
+
+\hypertarget{determine-the-effect-of-mutation}{%
+\subparagraph{determine the effect of
+mutation}\label{determine-the-effect-of-mutation}}
+
+just compare the CD of WT and mutant
+
+\begin{itemize}
+\item
+  if there's small change, but protein's function is affected, then this
+  residue is responsible for the function
+\item
+  if there's large change, then this residue affects the overall
+  structure. We know it's critical for the structure but cannot
+  determine if the residue is really responsible for the function (or at
+  active site)
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7_5.png}
+\caption{7\_5}
+\end{figure}
+
+\hypertarget{study-protein-folding-dynamicskinetics}{%
+\subparagraph{study protein folding
+dynamics/kinetics}\label{study-protein-folding-dynamicskinetics}}
+
+mix protein and denaturant, CD spectrum is recorded quickly. can get a
+\([\theta]\)-time curve (at picked wavelength). may fit with exponential
+equation
+
+\begin{quote}
+summary of plots
+
+\begin{itemize}
+\item
+  CD spectra (\(\theta\)-\(\lambda\)), SS and mutant
+\item
+  \([\theta]\)-experiment condition
+\item
+  \([\theta]\)-time
+\end{itemize}
+\end{quote}
+
+\hypertarget{week7-2-fluorescence-spectroscopy}{%
+\subsection{Week7-2 Fluorescence
+Spectroscopy}\label{week7-2-fluorescence-spectroscopy}}
+
+\begin{itemize}
+\item
+  \href{https://www.youtube.com/watch?v=OdBNVrPvJMY}{Fluorescence
+  Polarization - YouTube}
+\item
+  \href{https://www.youtube.com/watch?v=MONv05mJu8Y}{Fluorescence
+  Spectroscopy Tutorial - Typical Applications - YouTube}
+\item
+  \href{http://pic.ustc.edu.cn/_upload/article/files/40/4b/b8d018d3435b9990270250f1af43/b6481175-8dc0-4533-a210-b16fdddd6f2f.pdf}{slides
+  in USTC}
+\end{itemize}
+
+\hypertarget{principle-2}{%
+\subsubsection{Principle}\label{principle-2}}
+
+\hypertarget{generation}{%
+\paragraph{generation}\label{generation}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7-2_1.png}
+\caption{}
+\end{figure}
+
+\begin{itemize}
+\item
+  electron has multiple energy levels
+
+  \begin{itemize}
+  \item
+    only when the input energy equals energy difference can an electron
+    be excited
+  \end{itemize}
+\item
+  vibration makes each energy state split
+
+  \begin{itemize}
+  \item
+    at equilibrium distance the energy is lowest
+  \item
+    there is zero point energy
+  \end{itemize}
+\item
+  fluorescence
+
+  \begin{itemize}
+  \item
+    only consider singlet states
+  \item
+    range of spectrums
+
+    \begin{itemize}
+    \item
+      emission: \textbf{from ground virberational state in the first
+      excited state (actually S'\textsubscript{1}) to (any) ground
+      state}
+    \item
+      absorption: from ground virberational state in the ground state to
+      any higher electronic energy state
+
+      \begin{itemize}
+      \item
+        thus absorption energy might be higher but little difference
+      \end{itemize}
+    \end{itemize}
+  \item
+    features of the spectra
+
+    \begin{itemize}
+    \item
+      Stokes shift
+
+      \begin{itemize}
+      \item
+        energy of the first excited state might be lowered because of
+        \textbf{the solvent}, etc., which makes the difference in
+        absorption and emission spectrum.
+      \end{itemize}
+    \item
+      shape of the emission spectrum is independent of absorption
+
+      \begin{itemize}
+      \item
+        they may intercept a little
+      \item
+        and form kind of mirror symmetry
+      \end{itemize}
+    \item
+      but the intensity is corresponding to the absorption
+
+      \begin{itemize}
+      \item
+        we'd choose the most absorbed wave length (intrinsic property)
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{properties-of-fluorescence}{%
+\paragraph{properties of
+fluorescence}\label{properties-of-fluorescence}}
+
+intensity is dependent on
+
+\begin{itemize}
+\item
+  molar extinction coefficient (摩尔消光系数)
+\item
+  fluorescence quantum yield
+\item
+  concentration
+\item
+  optical pathlength
+\item
+  collect efficiency
+\end{itemize}
+
+considerations
+
+\begin{itemize}
+\item
+  usually use relative intensity
+\item
+  absorbance might turn nonlinear when concentration increases
+\end{itemize}
+
+fluorophores
+
+\begin{itemize}
+\item
+  intrinsic: \textbf{Trp} \textgreater{}\textgreater{}Tyr
+\item
+  nucleic acids' fluorescence is so weak
+\item
+  small molecule to help: ANS, fluorescein, EB
+\end{itemize}
+
+characteristics: \underline{conjugated C=C, complex rings}
+
+\hypertarget{fluorescence-polarization}{%
+\paragraph{fluorescence polarization}\label{fluorescence-polarization}}
+
+Situation: adding probes into the marcomolecule. Probes:
+
+\begin{itemize}
+\item
+  without target or in aqueous solution, their fluoresence is quenched
+\item
+  their fluoresence is enhanced in non-polar or rigid environment (eg
+  DNA)
+\end{itemize}
+
+Use \underline{horizontally} polarized light to excite, and detect
+horizontal and vertical signals (all are perpendicular to the exciting
+light)
+
+\[r=\dfrac{I_H-I_V}{I_H+2I_V}\]
+
+This \(r\) actually measures \textbf{anisotropy} of the system
+(containing ligand).
+
+\begin{itemize}
+\item
+  only molecules on certain orientation will be excited.
+\item
+  at excited state (\textasciitilde{}nanoseconds) the molecules move
+  randomly, thus the emission light is on all directions
+  (\(I_H\approx I_V\)), making \(r\) low (for single small molecule dye)
+\item
+  the rotation is slowed (large \(r\)) if
+
+  \begin{itemize}
+  \item
+    the probe binds to a big molecule
+  \item
+    solution with high viscosity
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7-2_2.png}
+\caption{}
+\end{figure}
+
+\hypertarget{application-examples}{%
+\subsubsection{Application examples}\label{application-examples}}
+
+\begin{quote}
+In summary, the key points are
+
+\begin{itemize}
+\item
+  \(r\) value is affected by molecular weight
+\item
+  from hydrophobic to exposed environment, red shift occurs and
+  intensity probably decreases
+\item
+  figures
+
+  \begin{itemize}
+  \item
+    intensity/\(r-\lambda\) curve
+  \item
+    intensity/\(r-\)condition (mole,...but \textbf{usually no
+    temperature})
+  \end{itemize}
+\end{itemize}
+\end{quote}
+
+\hypertarget{protein-proteinpeptideligand}{%
+\paragraph{protein-protein/peptide/ligand}\label{protein-proteinpeptideligand}}
+
+\begin{itemize}
+\item
+  One of the two has a flurophore and the binding will effect that site.
+\item
+  \(r-\lambda\) curve
+
+  \begin{itemize}
+  \item
+    bind to \textbf{cover Trp} into hydrophobic
+    site\(\longrightarrow\)blue shift
+  \item
+    hard to predict intensity
+  \end{itemize}
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7-2_4.png}
+  \caption{7-2\_4}
+  \end{figure}
+\item
+  \(r-\)molar ratio
+
+  \begin{itemize}
+  \item
+    is binding? see shape
+  \item
+    how many? see ratio (there must be apparent mw change)
+  \item
+    binding mode (close to Trp)? see \(r\)
+  \item
+    affinity??
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{conformational-change}{%
+\paragraph{conformational change}\label{conformational-change}}
+
+eg: add urea to protein (with \textbf{Trp}!)
+
+\begin{itemize}
+\item
+  slight red shift
+\item
+  intensity significantly reduced
+\end{itemize}
+
+make a plot of fold fraction (calculated from intensity) and urea
+concentration to study denaturation/folding/Kd...
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7_2-3.jpg}
+\caption{7\_2-3}
+\end{figure}
+
+\hypertarget{introduce-to-living-cell}{%
+\paragraph{introduce to living cell}\label{introduce-to-living-cell}}
+
+Design these proteins to detect the content of small molecules, like
+FICRhR/cAMP.
+
+As a technique to study the change/visualize processes ...
+
+\hypertarget{fluorescence-resonance-energy-transfer}{%
+\subsubsection{Fluorescence Resonance Energy
+Transfer}\label{fluorescence-resonance-energy-transfer}}
+
+\hypertarget{principle-3}{%
+\paragraph{principle}\label{principle-3}}
+
+FRET is a kind of dipole-dipole interaction beween excited states. The
+donor is excited (eg by light) and then excites the acceptor. eg: CFP
+and YFP
+
+The efficiency of energy transfer is \(\dfrac{R_0^6}{R_0^6+r^6}\), which
+decreases quickly through distance.
+
+\begin{quote}
+Primary conditions:
+
+\begin{itemize}
+\item
+  donor and acceptor is close contact (10\textasciitilde{}100 \(\AA\))
+\item
+  the absorption spectrum of acceptor \textbf{overlap}s with the
+  emission spectrum of the donor (but separable).
+\item
+  their dipole orientation must be approximately parallel
+\end{itemize}
+\end{quote}
+
+\hypertarget{application-2}{%
+\paragraph{application}\label{application-2}}
+
+Strength: just fusion expression of a fluorescent protein, easier than
+chemical dye in processing and maintaining biological activity
+(stability).
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/7-2_5.png}
+\caption{7-2\_5}
+\end{figure}
+
+Can quantify:
+
+\begin{itemize}
+\item
+  Protein-Protein/DNA Interaction
+
+  \begin{itemize}
+  \item
+    if they can interact, you'll see the emission spectrum of the
+    acceptor (predominant) and donor, instead of only the donor's.
+  \item
+    \emph{in vivo} or \emph{vitro}
+  \end{itemize}
+\item
+  protein conformational changes
+
+  \begin{itemize}
+  \item
+    in a specifically designed conformation, the donor and acceptor can
+    interact; condition changes, spectrum changes
+  \item
+    maybe observe signal to change with time, if slow
+  \end{itemize}
+\end{itemize}
+
+\url{https://www.biomart.cn/mobile/experiment/article/25123.htm}
+
+\hypertarget{quencher}{%
+\subsubsection{Quencher}\label{quencher}}
+
+Molecules which can interact with others (fluorophore) and reduce the
+intensity of fluorescence.
+
+eg: small molecules as quenchers. like oxygen, acrylamide,
+\(\ce{Cs+*4H2O}\)
+
+Put (different concentration of) quencher together with fluorescent
+protein (marcomolecule) to measure the \textbf{accessibility} for the
+quencher into the \underline{aromatic residues}. Just measure
+\(F_0/F_c\), the intensity before and after adding quencher.
+
+\hypertarget{week8-2-nmr}{%
+\subsection{Week8-2 NMR}\label{week8-2-nmr}}
+
+\begin{itemize}
+\item
+  \href{https://en.wikipedia.org/wiki/Relaxation_(NMR)}{Relaxation (NMR)
+  - Wikipedia}
+\item
+  \href{https://www.youtube.com/watch?v=TQegSF4ZiIQ}{How MRI Works -
+  Part 1 - NMR Basics - YouTube} detailed
+
+  \begin{itemize}
+  \item
+    \href{https://www.youtube.com/watch?v=RZLew6Ff-JE}{NMR spectroscopy
+    visualized - YouTube}
+  \item
+    \href{https://www.youtube.com/watch?v=DQ5kO-jPQyA}{eLearning - NMR
+    Relaxation - YouTube}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{principles-1}{%
+\subsubsection{Principles}\label{principles-1}}
+
+\begin{itemize}
+\item
+  static magnetic field: make the energy difference of nucleus
+
+  \begin{itemize}
+  \item
+    spin energy levels split, because spin has direction
+  \end{itemize}
+\item
+  inducing electromagnetic wave: to excite the nucleus when the energy
+  \underline{matches}
+
+  \[\Delta E=h\nu=h\gamma B_0\]
+
+  \begin{itemize}
+  \item
+    \(\nu\) is the frequency of inducing electromagnetic wave
+  \item
+    \(\gamma\) is only related to atom type
+  \item
+    \(B_0\) is the strength of static megnetic field
+  \end{itemize}
+\item
+  the absorption and emission energy is the same, so we often measure
+  the latter
+\item
+  for \textsuperscript{1}H, 42.58 MHz\textasciitilde{}1 Tesla
+\end{itemize}
+
+\hypertarget{phenomenons}{%
+\subsubsection{Phenomenons}\label{phenomenons}}
+
+\hypertarget{chemical-shift}{%
+\paragraph{Chemical shift}\label{chemical-shift}}
+
+\hypertarget{definition}{%
+\subparagraph{Definition}\label{definition}}
+
+ring current of electron\(\longrightarrow\)induced magnetic
+field\(\longrightarrow\)\(B\) on the nucleus changes
+
+\[B_{eff}=B_0(1-\sigma)\]
+
+so
+
+\[\nu=\gamma B_{eff}\\
+\delta=\dfrac{\nu-\nu_{ref}}{\nu_{ref}}\times 10^{6}\]
+
+\(\nu_{ref}\) is from a standard substance.
+
+\hypertarget{factors-influencing}{%
+\subparagraph{\texorpdfstring{Factors influencing
+\(\delta\)}{Factors influencing \textbackslash{}delta}}\label{factors-influencing}}
+
+\begin{quote}
+The induced magnetic field is related to
+
+\begin{itemize}
+\item
+  Electron density: more electron (more shield), higher current, strong
+  field, lower \(\delta\)
+\item
+  the direction (spatial orientation) of other atoms
+\end{itemize}
+\end{quote}
+
+so the factors include:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  inductive effect (electronegativity)
+
+  connecting to such an atom lowers the electron density
+  (\(\ce{OH,C=O,C+}\)...)
+
+  thus farther from TMS i.e. large \(\delta\)
+
+  roughly: \(\delta \propto \) Electronegativity of connected atom
+\item
+  hybridization effect (anisotropy)
+
+  usually vinyl Hs have big \(\delta\)
+
+  for biomolecules, those on the aryl (F, W, Y)
+\item
+  other effects (structure)
+
+  \begin{itemize}
+  \item
+    H bond
+  \item
+    dihedral angle, secondary structure
+  \item
+    temperature
+
+    \begin{itemize}
+    \item
+      random coil is more variable
+    \end{itemize}
+  \item
+    solvent
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{j-coupling-spin-spin-coupling}{%
+\paragraph{J coupling (spin-spin
+coupling)}\label{j-coupling-spin-spin-coupling}}
+
+For two protons on two connected C, when one of them is on ground
+state/excited spin state, it generates different induced magnetic field
+(only differ in directions). It functions on the other and makes the
+\(\Delta E\) change. The magnetic field in one direction strengthens
+\(B_0\) while the other weakens, so \(\Delta E\) splits into two whose
+energy difference is \(J\). This effect is mutual.
+
+\begin{itemize}
+\item
+  often \textless{} distance of 3 bonds.
+
+  \begin{itemize}
+  \item
+    \underline{transmitted via electrons in the intervening bonds}
+  \end{itemize}
+\item
+  NMR intensity: number of Hs; split: number of adjacent Hs
+
+  \begin{itemize}
+  \item
+    just add up the effect of all Hs, 2 choices each
+  \item
+    get probability distribution/strength: Pascal triangle
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{relaxation}{%
+\paragraph{Relaxation}\label{relaxation}}
+
+Relaxation time \(T_2\) describes how fast the NMR signal decays in
+time-domain spectroscopy.
+
+In frequency-domain spectroscopy, full width at half maximum (FWHM,
+linewidth) is \(\pi/T_2\) (The AUC is constant). Broad peak/large FWHM
+means
+
+\begin{itemize}
+\item
+  small \(T_2\)/slower decay, lower height
+\item
+  molecule size is big, or this group is rigid (like -Ph)
+\end{itemize}
+
+\hypertarget{labile-hydrogens}{%
+\paragraph{Labile hydrogens}\label{labile-hydrogens}}
+
+H on O,N,-COOH are shielded by hydrogen-deuterium exchange (add
+D\textsubscript{2}O)
+
+\hypertarget{applications-1}{%
+\subsubsection{Applications}\label{applications-1}}
+
+only 1D \textsuperscript{1}HNMR
+
+\hypertarget{identify-inhibitors}{%
+\paragraph{identify inhibitors}\label{identify-inhibitors}}
+
+eg: Cyclophilin catalyzes isomerization of Pro in the substrate
+polypeptide from \emph{cis} to \emph{trans}. \emph{cis} exists in single
+substrate, disappears when adding Cyclophilin, re-appears when further
+adding its inhibitor.
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/8_1.png}
+\caption{8\_1}
+\end{figure}
+
+\hypertarget{study-protein-folding}{%
+\paragraph{study protein folding}\label{study-protein-folding}}
+
+\begin{itemize}
+\item
+  signals of unfolded protein are simular and overlap
+\item
+  that of folded protein have dispersion, and may have signals
+  \textless{}0.5 (alkyl) or \textgreater{}9 (peptide bond) ppm.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/8_2.png}
+\caption{8\_2}
+\end{figure}
+
+\hypertarget{drug-discovery}{%
+\paragraph{drug discovery}\label{drug-discovery}}
+
+Compare signals of \underline{small molecules}. The signals may look
+like the target after binding. eg: They move together, so peaks of
+ligands become broader
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/8_3.png}
+\caption{8\_3}
+\end{figure}
+
+\hypertarget{metabonomics}{%
+\paragraph{metabonomics}\label{metabonomics}}
+
+First we'd know the characteristic peak of compounds.
+
+\hypertarget{biomarker-identification}{%
+\subparagraph{biomarker identification}\label{biomarker-identification}}
+
+Compare the spectra of samples (like urine) from patients and healthy
+ones. Find the abnormal metabolite corresponding to abnormal signals.
+
+\hypertarget{toxicology}{%
+\subparagraph{toxicology}\label{toxicology}}
+
+Compare the spectra of samples from rat treated with a drug/toxin and
+control. Identify which is up/downregulated.
+
+\hypertarget{summary-on-biophysical-techniques}{%
+\subsubsection{Summary on biophysical
+techniques}\label{summary-on-biophysical-techniques}}
+
+\begin{itemize}
+\item
+  CD tells about SS, but don't know if it's properly folded
+\item
+  fluoresence/NMR can tell if it's folded, but cannot tell exactly what
+  SS is
+\end{itemize}
+
+having \(\alpha\) helix does not mean it's properly folded/packed!
+
+\hypertarget{week10-1-conformational-transition}{%
+\subsection{Week10-1 Conformational
+Transition}\label{week10-1-conformational-transition}}
+
+\hypertarget{fundamental-representations}{%
+\subsubsection{Fundamental
+Representations}\label{fundamental-representations}}
+
+For the transition of a marcomolecule in 2 conformations \(\ce{A<=>B}\),
+the equilibrium constant is \(K=\dfrac{[B]}{[A]}\), the probability of
+observing B is
+
+\[P_B=\dfrac{[B]}{[A]+[B]}=\dfrac{K}{1+K}\]
+
+Assume there are many states (\(i=1,2,\dots\)) in equilibrium, and a
+supposed reference state (\(i=0\), only for the sake of mathematics),
+define \textbf{weight} as the \underline{equilibrium constant} between
+states (S):
+
+\[\omega_i=\dfrac{[S_i]}{[S_0]}=\exp(-\Delta G_{i,0}/RT)\]
+
+so \(\omega_i\) is only related to energy level. We combine those in the
+same energy level, the number of states is called \textbf{degeneracy}
+\(g_i\). So we \underline{redefine}: \(i\) does not refer to a single
+state but the combination of states in the same energy level, so
+
+\[\omega_i=g_i\exp(-\Delta G_{i,0}/RT)\]
+
+We also define \textbf{partition function} as
+
+\[Q=\sum_{i=1}^{N_{tot}} \omega_i\]
+
+and the probability will be
+
+\[P_i=\dfrac{\omega_i}{Q}\]
+
+Sum of concentrations on this energy level divided by the total
+concentration. All divided by \([S_0]\) and sum up states in the same
+energy level to get \(\omega_i\).
+
+\hypertarget{conformational-transition-models}{%
+\subsubsection{Conformational Transition
+Models}\label{conformational-transition-models}}
+
+Notation:
+
+\begin{itemize}
+\item
+  For a DNA/protein of length \(N\), each unit has a state (helix or
+  coil, etc.), represented as a,b. 
+\item
+  Suppose \(\Delta G\) of changing a single unit from a to b is \(s\).
+
+  \begin{itemize}
+  \item
+    so \(\omega_i=g_is^i\)
+  \end{itemize}
+\item
+  Probability of the state with \(i\) units in b state is \(P_i\).
+\item
+  Fraction of a,b in all units of all states is \(P_a,P_b,\dots\)
+
+  \begin{itemize}
+  \item
+    if define fraction of b in state \(i\) as \(f_i=\dfrac{i}{N}\),
+  \item
+    then \(P_b=\frac{f_i\omega_i}{Q}\)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{all-or-none-highly-cooperative-model}{%
+\paragraph{all-or-none (highly-cooperative)
+model}\label{all-or-none-highly-cooperative-model}}
+
+\underline{Only two states}: all is a, and all is b.
+
+\[K=s^N\\
+P_0=P_a=\dfrac{1}{1+s^N}\\
+P_N=P_b=\dfrac{s^N}{1+s^N}\\\]
+
+Interpretation:
+
+\begin{itemize}
+\item
+  If \(s=1\) (no energy difference), \(P_0=P_N=1/2\)
+\item
+  When \(N\) is large,
+
+  \begin{itemize}
+  \item
+    as condition (pH, temp) change, \(s\) changes
+  \item
+    as long as \(s>1\), \(P_b\) is close to 1; if \(s<1\), \(P_b\) is
+    close to 0
+  \item
+    which means \(P_b\) will not stay at the middle but either close 0
+    or 1
+  \item
+    the graph looks like \(\downarrow\) , where it seems the two states
+    change \textbf{suddenly}
+
+    \begin{figure}
+    \centering
+    \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/10_1.png}
+    \caption{10\_1}
+    \end{figure}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{non-cooperative-model}{%
+\paragraph{non-cooperative model}\label{non-cooperative-model}}
+
+\underline{All units change independently.} So there will be \(N+1\)
+states and
+
+\[g_i=\binom{i}{N}=\dfrac{N!}{i!(N-i)!}\\
+Q=\sum \binom{i}{N}s^i=(1+s)^N\\\]
+
+Interpretation
+
+\begin{itemize}
+\item
+  if \(s=1\), \(P_i\) will be a binomial distribution; otherwise just
+  modified by \(s^N\)
+\item
+  \(P_b=\cdots=\dfrac{s}{s+1}\), and this might be a long dependence
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/10_2.png}
+  \caption{10\_2}
+  \end{figure}
+\item
+  \(P_b/P_a=s\) which is independent of \(N\). The fraction of b of all
+  states is the same as single a and b.
+\end{itemize}
+
+\hypertarget{zipper-model}{%
+\paragraph{Zipper Model}\label{zipper-model}}
+
+A classical model to describe realistic transitions.
+
+\begin{itemize}
+\item
+  Assume it's impossible for two sites to transition simultanously.
+\item
+  Assume the first step is more difficult (\textbf{nucleation}, the one
+  to break original complete structure, examples later), which needs
+  extra energy.
+
+  \[\sigma=\Delta G_{extra}>0\\
+  \omega_1=\exp[-(s+\sigma)/RT]\]
+\item
+  Also, only those beside the nucleation center will transit.
+  \underline{State \(i\) will have continuous b units of number \(i\)}. 
+\end{itemize}
+
+So
+
+\[g_i=
+\begin{cases}
+1 & i=0\\
+N-i+1 & i\geqslant 1
+\end{cases}\\
+
+\omega_i=
+\begin{cases}
+1 & i=0\\
+g_i\sigma s^i & i\geqslant 1
+\end{cases}\\
+
+P_b=\dfrac{\sum\limits_{i=1}^{N}\dfrac{i}{N}(N-i+1)\sigma s^i}{1+\sum\limits_{i=1}^{N}(N-i+1)\sigma s^i}\]
+
+Results:
+
+\begin{itemize}
+\item
+  it will look like highly-cooperative model if
+
+  \begin{itemize}
+  \item
+    \(\sigma \downarrow\) (\(\ll s\)), difficult for the first to occur.
+  \item
+    \(N \uparrow\), \(\sigma\) is more distributed on the sequence
+  \end{itemize}
+
+  so \(\sigma\) is called "cooperativity coefficient"
+\item
+  (not like in slides) it will not look like non-cooperative model
+  because definition of degeneracy has implied cooperativity.
+\end{itemize}
+
+\hypertarget{applications-2}{%
+\subsubsection{Applications}\label{applications-2}}
+
+\hypertarget{in-proteins}{%
+\paragraph{in proteins}\label{in-proteins}}
+
+\hypertarget{coil-helix-transition}{%
+\subparagraph{coil-helix transition}\label{coil-helix-transition}}
+
+From coil to helix, the first 4 (/3/5) events are difficult. Then just
+need to move one residue if the neighboring three are ready.
+
+\begin{itemize}
+\item
+  \(s\approx1\) because enthalpy gain from H bonding is counteracted by
+  entropy loss (helix is more fixed)
+
+  \begin{itemize}
+  \item
+    sequence dependence: AA type and its environment
+  \end{itemize}
+\item
+  \(\sigma\approx2\times10^{-4}\) for poly-\(\gamma\)-benzyl-L-Glu
+
+  \begin{itemize}
+  \item
+    Accounting for entropy loss from 3 more residues (N just minus 3).
+    Thus, \(\sigma_{3-10}>\sigma_{\alpha}\) (i-i+3)
+  \item
+    sequence dependence: Lys \(\sigma\approx10^{-3}\)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{helix-melting-reverse}{%
+\subparagraph{helix melting (reverse)}\label{helix-melting-reverse}}
+
+Melting one residue may start from the end or middle. The latter
+situation will break H bonds at both ends. Maybe break 5 H bonds and
+gain entropy once? A larger \(\sigma\)???
+
+Still using the original \(s\) which \(>1\).
+
+\begin{itemize}
+\item
+  from the end: \(\omega_{N-1}=2\sigma s^{N-1}\) 
+\item
+  from the middle: \(\omega_{N-1}=(N-2)\sigma^2 s^{N-1}\)
+
+  \begin{itemize}
+  \item
+    the first term is degeneracy. 2 ends, others are middle
+  \item
+    if you consider the reversed numbering,
+    \(\omega_1=(N-2)\sigma^2\dfrac{1}{s}\), divided by \(s^{N}\) 
+  \end{itemize}
+\end{itemize}
+
+\begin{quote}
+So when the probabilities equal,
+
+\[N=\dfrac{2}{\sigma}+2\]
+
+\(N\) is independent of \(s\) but only decided by \(\sigma\)
+\end{quote}
+
+Larger \(N\) distributes the nucleation loss and more likely to start in
+the middle.
+
+But more start from the end. eg: poly-\(\gamma\)-benzyl-L-Glu will melt
+in the middle if \(N>10002\)....
+
+\hypertarget{in-dna}{%
+\paragraph{in DNA}\label{in-dna}}
+
+It follows the same equations to determine whether to start from the end
+or middle. More probable in the middle? \(\sigma\approx10^{-7}\)...
+
+\hypertarget{dna-melting}{%
+\subparagraph{DNA melting}\label{dna-melting}}
+
+From dsDNA to ssDNA,
+
+\begin{itemize}
+\item
+  \(s\) is composed of energy to break (2/3) H bonds and a pair of base
+  stacking (main force in DNA secondary structure!). 
+\item
+  \(\sigma\) means additional energy to break base stacking on the other
+  side.
+\end{itemize}
+
+\hypertarget{dna-annealing}{%
+\subparagraph{DNA annealing}\label{dna-annealing}}
+
+\begin{itemize}
+\item
+  dependent on the concentration of ssDNA, so
+  \(\omega_1=\kappa\sigma s\)
+\item
+  sequence dependence
+\item
+  in annealing it needs finding proper combination of base pairs (eg. a
+  primer searches for complementary sequence), so cooperativity is lower
+  than melting. Also \(T_m\gg T_a\). I think it's combining
+  \(\kappa\sigma\) as \(\sigma\) and this is just amending
+  non-quasi-static kinetic error. 
+\end{itemize}
+
+\hypertarget{dna-helical-transition}{%
+\subparagraph{DNA helical transition}\label{dna-helical-transition}}
+
+In ethanol (remove water), \(\ce{B-DNA->A-DNA}\).
+
+\begin{itemize}
+\item
+  think of DNA becoming a little bit tighter.
+\item
+  \(s\) : the difference between average energy per base pair in two
+  forms
+\item
+  \(\sigma\): A-B junction, it's a little distorted when an A form base
+  connect with a B
+
+  \begin{itemize}
+  \item
+    5\textasciitilde{}8 kJ/mol, \(\sigma=0.14\sim0.04\)
+  \end{itemize}
+\end{itemize}
+
+Rise salt conc/alcohol conc/temperature, \(\ce{B-DNA->Z-DNA}\)
+
+\begin{itemize}
+\item
+  \(\sigma\) turns to the energy used to turn right-handed helix into
+  left-handed helix
+\item
+  \(\sigma\) is larger if conditions suitable for Z-DNA (above) is
+  satisfied.
+\end{itemize}
+
+\hypertarget{dna-supercoil-state-transition}{%
+\subparagraph{DNA supercoil state
+transition}\label{dna-supercoil-state-transition}}
+
+For double-strand circular DNA
+
+\begin{itemize}
+\item
+  linking number: how many times one strand comes around the other.
+
+  \begin{itemize}
+  \item
+    Might change only when double strand is broken, like using
+    topoisomerase
+  \end{itemize}
+\item
+  twisting number: how many "turns" the two strands rotate along central
+  axis.
+
+  \begin{itemize}
+  \item
+    total number of base pairs in a DNA molecule divided by the
+    \emph{number} of bases per turn
+  \end{itemize}
+\item
+  writhing number: the number of supercoiling
+\end{itemize}
+
+\[L=T+W\\
+\Delta L=\Delta T+\Delta W\]
+
+situations
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  In DNA replication, helicase functions. \(L\) remains. \(T\) behind
+  decreases, \(T\) in front increases.
+\item
+  An enzyme unwinds DNA by 2 turns through cutting it off.
+  \(\Delta L=-2\)
+
+  \begin{itemize}
+  \item
+    maintaining circular shape: \(\Delta W=0\)
+  \item
+    relive all stress: \(\Delta T=0\)
+  \end{itemize}
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/10_3.png}
+\caption{10\_3}
+\end{figure}
+
+Transition occurs in a local region of alternating C and G
+
+why supercoil?
+
+\begin{itemize}
+\item
+  save space
+\item
+  for replication and transcription (Z-DNA)
+\end{itemize}
+
+In addition for DNA melting: how does \(s\) change with condition?
+
+\begin{itemize}
+\item
+  at \(T_m\), melting and renaturation reach a equilibrium,
+  \(\mathbf{s_{T_m}=\dfrac{[melted]}{[unmelted]}=1}\)
+\item
+  according to \href{https://zh.wikipedia.org/wiki/范特霍夫方程}{Van 't
+  Hoff equation},
+  \(s=-\dfrac{\Delta H^\Theta}{R}(\dfrac{1}{T}-\dfrac{1}{T_m})\)
+\item
+  when \(T>T_m\), \(s>1\) thus can melt; when \(T<T_m\), \(s<1\)
+\end{itemize}
+
+\hypertarget{week10-2-protein-folding}{%
+\subsection{Week10-2 Protein Folding}\label{week10-2-protein-folding}}
+
+\hypertarget{basics-1}{%
+\subsubsection{Basics}\label{basics-1}}
+
+Why study protein folding?
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  sequence-structure relationship
+\item
+  related to diseases
+\item
+  biotechniques eg. purify
+\end{enumerate}
+
+\hypertarget{some-facts}{%
+\paragraph{some facts}\label{some-facts}}
+
+\begin{itemize}
+\item
+  Protein folds in milliseconds
+\item
+  Protein folding must follow certain pathways
+
+  \begin{itemize}
+  \item
+    instead of randomly search in the huge conformation space.
+  \end{itemize}
+\item
+  Protein refolds automatically upon dilution of denaturant.
+\item
+  Unfolded states are heterogenous (all kinds) while native states are
+  narrow.
+\item
+  Typical denaturant: 8M urea, 6M GdnCl
+\end{itemize}
+
+\hypertarget{concepts}{%
+\paragraph{concepts}\label{concepts}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  denatured state (D)
+
+  \begin{itemize}
+  \item
+    an ensemble of dynamic inter-converting species
+  \item
+    with few nonlocal interactions; only retain few local interactions
+
+    (interactions between atoms that are close in sequence)
+  \end{itemize}
+\item
+  intermediate (I)
+
+  \begin{itemize}
+  \item
+    occur during refolding of large proteins
+  \item
+    on-pathway intermediate has native-like interactions that makes
+    conformation searching easier
+  \item
+    trapped intermediate slows down folding, which needs chaprons,
+    otherwise aggregates/precipatates (even lower energy than native)
+  \end{itemize}
+\item
+  transition state (TS)
+
+  \begin{itemize}
+  \item
+    highest energy, correponding to rate-limiting step
+  \item
+    backbone: forms secondary structure
+  \item
+    side chain: specific rotamers, a bridge from disordered conformation
+    to native structure
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{folding-models}{%
+\subsubsection{Folding Models}\label{folding-models}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  framework model
+
+  \begin{itemize}
+  \item
+    quickly form secondary structure first, leading to tertiary
+    structure
+  \item
+    segaments of native-like structures in TS, some residues have high
+    \(\phi\) value
+  \item
+    prefered in bigger protein
+  \item
+    subvisions: "diffusion collison" and "propagation"
+  \end{itemize}
+\item
+  nucleation model
+
+  \begin{itemize}
+  \item
+    form a compact nucleus first, then further condensation
+  \item
+    partially formed interactions; residues have equalized \(\phi\)
+    value
+  \item
+    prefered in smaller protein
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{equilibrium-studies}{%
+\subsubsection{Equilibrium Studies}\label{equilibrium-studies}}
+
+\hypertarget{principles-2}{%
+\paragraph{principles}\label{principles-2}}
+
+states: D, N, Intermediates (know how many!)
+
+choose a property \(y\) (eg. Fluo/CD under a certain \(\lambda\) that
+maximizes the difference).
+
+fit the fraction \(f\) of each state.
+
+\[y=f_Ny_N+f_Dy_D+\sum_if_iy_i\\
+f_N+f_D+\sum_if_i=1\]
+
+define the normalized property (distance from denatured)
+
+\[d_i=\dfrac{y_i-y_N}{y_D-y_N} \in [0,1]\]
+
+and several ratios
+
+\[K_{i}=\dfrac{f_{i}}{f_N}\\
+K_{D}=\dfrac{f_D}{f_N}\]
+
+and apparent (表观) franctional denaturation/native
+
+\[f_{app}=f_D+\sum_if_id_i\\
+1-f_{app}=f_N+\sum_if_i(1-d_i)\]
+
+so the apparent equilibrium constants (between apparent denatured and
+native)
+
+\[K_{app}=\dfrac{f_{app}}{1-f_{app}}=\dfrac{K_D+\sum\limits_iK_id_i}{1+\sum\limits_iK_i(1-d_i)}{}\]
+
+\begin{itemize}
+\item
+  if there's no intermediates (2 states), \(K_i=0\)
+
+  condition: \(K_{app}=K_D=-\exp(\Delta G/RT)\)
+
+  or is constant in different property experiments
+\item
+  otherwise \(K_{app}\neq K_D\), or varies in experiments since \(d_i\)
+  varies
+\end{itemize}
+
+\hypertarget{experiment-and-fitting}{%
+\paragraph{experiment and fitting}\label{experiment-and-fitting}}
+
+add denaturant/refolding buffer; get signals under different conditions
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/10_4.png}
+\caption{10\_4}
+\end{figure}
+
+\hypertarget{denaturant-gdnclurea-fluocd}{%
+\subparagraph{denaturant (GdnCl/urea,
+Fluo/CD)}\label{denaturant-gdnclurea-fluocd}}
+
+(Assume \(y_D>y_N\)) 2 states,
+\(f_D=\dfrac{[D]}{[D]+[N]}=\dfrac{K_D}{K_D+1}\).
+
+For \(\ce{N<=>D}\), \(\Delta G\) has approximately linear relationship
+with conc of denaturant \(c\). Thus \(K_D=\exp[-(\Delta G_0+mc)/RT]\),
+where \(\Delta G_0\) is when \(c=0\).
+
+Plug in \(y=y_N+(y_D-y_N)\cdot f_D\) (or reverse D/N), get
+
+\[y=y_N+(y_D-y_N)\cdot\dfrac{\exp[-(\Delta G_0+mc)/RT]}{\exp[-(\Delta G_0+mc)/RT]+1}\]
+
+Fit the y-c curve to get \(m\) and \(\Delta G_0\). Either set \(y_D\),
+\(y_N\) as parameters or not.
+
+\hypertarget{temperature-cd}{%
+\subparagraph{temperature (CD)}\label{temperature-cd}}
+
+2 states, still \(y=y_N+(y_D-y_N)\cdot\dfrac{K_D}{K_D+1}\), but \(K_D\)
+is related to \(T\).
+
+Fit curve to get
+
+\begin{itemize}
+\item
+  \(\Delta H_m\): at \(T_m\)
+\item
+  \(\Delta C_p\): of reaction. assume as constant
+\item
+  \(T_m\): D and N reach equilbrium
+\item
+  initial protein concentration
+\end{itemize}
+
+\hypertarget{kinetics-studies}{%
+\subsubsection{Kinetics Studies}\label{kinetics-studies}}
+
+\hypertarget{time-scale-experiment}{%
+\paragraph{time-scale experiment }\label{time-scale-experiment}}
+
+For 2-state model \(\ce{N<=>[k_1][k_{-1}]D}\),
+\(y=y_\infty+A\exp(-k_ut)\). Fit \(\ln(y-y_\infty)-t\) to get \(k_u\).
+Reversely get \(k_f\).
+
+for 3-state model \(\ce{N<=>[k_1][k_{-1}]X<=>[k_2][k_{-2}]D}\),
+\(y-y_0=A_1\exp(-\lambda_1 t)+A_2\exp(-\lambda_2 t)\). Maybe fit each
+subsection.
+
+Also, intermediate of folding and refolding may not be the same.
+
+\hypertarget{get-rate-for-2-state-model}{%
+\paragraph{get rate for 2-state
+model}\label{get-rate-for-2-state-model}}
+
+\hypertarget{equations}{%
+\subparagraph{equations}\label{equations}}
+
+For \(\ce{N<=>D}\), do unfolding/refolding separately.
+
+\begin{itemize}
+\item
+  Add denaturant into folded protein
+
+  \begin{itemize}
+  \item
+    \textbf{when conc is high, it's only unfolding}, discard refolding
+    reaction (vice versa)
+  \end{itemize}
+\item
+  Repeat this 2-state experiment with different concentration. Get a
+  \(k-c\) curve.
+
+  \begin{itemize}
+  \item
+    Actually regard this as \(\ce{N + urea ->[k_1] D + urea}\).
+  \end{itemize}
+\item
+  Fit \(\ln k_f=\ln k_{\ce{H2O}}-m_{k_f}c\).
+
+  \begin{itemize}
+  \item
+    The linearity indicates if it's 2-state.
+  \end{itemize}
+\end{itemize}
+
+Do the same reversely and combine the plots, the two arms.
+
+Or just fit all data with this to get Chavron plot (assume folding rate
+in high concentration is much slower than unfolding and vice versa).
+
+\[k=k_{f,\ce{H2O}}\cdot\exp(-m_{k_f}c)+k_{u,\ce{H2O}}\cdot\exp(m_{k_u}c)\]
+
+\hypertarget{interpretation}{%
+\subparagraph{Interpretation}\label{interpretation}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/10_5.png}
+\caption{10\_5}
+\end{figure}
+
+\begin{itemize}
+\item
+  All parameters \textgreater{}0.
+
+  \begin{itemize}
+  \item
+    \(k_{\ce{H2O}}\) is the rate when \(c=0\)
+  \item
+    \(m_k\) is an important factor to indicate how denaturant changes
+    the rates
+  \end{itemize}
+\item
+  The intersect of two lines indicates the concentration when half the
+  protein is unfolded, indicating thermodynamical stability.
+
+  \begin{itemize}
+  \item
+    \(c_m=\dfrac{k_{f,\ce{H2O}}-k_{u,\ce{H2O}}}{m_{k_f}+m_{k_u}}\)
+  \end{itemize}
+\item
+  simple compare: kinetically more stable if
+
+  \begin{itemize}
+  \item
+    \(m_{k_f}\) equals and \(m_{k_u}\) smaller;
+  \item
+    \(m_{k_u}\) equals and \(m_{k_f}\) bigger;
+  \end{itemize}
+\item
+  \(\ln k_f\) and \(\Delta G_F\) are both linear with \(c\), and the
+  coefficient should be the same.
+
+  \begin{itemize}
+  \item
+    But if we use only one \(m\) is equilibrium study, i.e treat it as
+    2-states, add up two \(\Delta G\), then the total
+    \(m=m_{k_f}+m_{k_u}\). 
+  \item
+    Larger \(m\) leads to steeper equilibrium curve (like all-or-none),
+    indicating more stable besides the above two criteria.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{local-state-studies}{%
+\subsubsection{Local State Studies}\label{local-state-studies}}
+
+\hypertarget{nmr}{%
+\paragraph{NMR}\label{nmr}}
+
+Collect the signal of all \(\ce{-NH-}\) groups. All residues in HSQC
+have been assigned.
+
+\begin{itemize}
+\item
+  Compare the \textsuperscript{1}H chemical shift of (half?) denatured
+  protein and ramdom coil
+
+  \begin{itemize}
+  \item
+    whose chemical shift is lack of dispersion (8\textasciitilde{}8.5
+    ppm). If some residues are out of this (7.5\textasciitilde{}9.5
+    ppm), it may maintain folded structure.
+  \end{itemize}
+\item
+  Compare the \(\ce{H-N-C_\alpha-H_\alpha}\) J-coupling constant, which
+  is related to \(\phi\) angle.
+\item
+  Check the NOEs.
+\end{itemize}
+
+???
+
+\hypertarget{transition-state--value-anaylsis}{%
+\paragraph{\texorpdfstring{transition state (\(\phi\) value
+anaylsis)}{transition state (\textbackslash{}phi value anaylsis)}}\label{transition-state--value-anaylsis}}
+
+For \(\ce{N<=>TS<=>D}\), compare WT and one-residue mutant.
+
+Experimentally get \(k_f\) and \(k_u\) (I guess under appropriate
+denaturant concentration, if we assume \(m\) does not change. But they
+do change...).
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/10_6.png}
+\caption{10\_6}
+\end{figure}
+
+Think of activation energy: \(k_f=k_{f,0}\exp(-\Delta G_{U-TS}/RT)\).
+Also for \(f_u\).
+
+Intuition: larger \(k_f\), smaller \(|\Delta G_{U-TS}|\).
+
+Strange definition:
+
+\[\Delta\Delta G_{U-TS}=\Delta G_{U-TS}-\Delta G^*_{U-TS}=-\ln\dfrac{k_f}{k_f^*}\\
+\Delta\Delta G_{TS-N}=\Delta G^*_{TS-N}-\Delta G_{TS-N}=-\ln\dfrac{k_u^*}{k_u}\]
+
+then
+
+\[\phi_f=\Delta\Delta G_{TS-N}/\Delta\Delta G_{U-N}\\
+\phi_u=\Delta\Delta G_{U-TS}/\Delta\Delta G_{U-N}\]
+
+\begin{itemize}
+\item
+  for 2-state model, \(\phi_f+\phi_u=1\)
+\item
+  if \(\phi_f\approx1\), no difference in TS and U, so this residue is
+  absent in TS formation; if \(\phi_u\approx1\), no difference in
+  \(\Delta G_{TS-N}\), so this residue is almost done in TS
+\item
+  if most residues shows 0 or 1, the protein is completing local
+  structure first: \textbf{Framework model}
+\item
+  if most residues shows fractional \(\phi\), the protein is forming
+  partial structure first overall: \textbf{Nucleation model}
+\end{itemize}
+
+Notes
+
+\begin{itemize}
+\item
+  \(k_f\) is on the "unfold" side.
+\item
+  \(\phi_f\) is on the "fold" side.
+\item
+  \(K_u=\dfrac{k_u}{k_f}\) for \(\ce{N<=>U}\), because
+  \(r_u\propto k_u[N]\)
+\end{itemize}
+
+\hypertarget{pulsed-hydrogen-labeling}{%
+\paragraph{pulsed hydrogen labeling}\label{pulsed-hydrogen-labeling}}
+
+\begin{itemize}
+\item
+  unfold the protein in \(\ce{D2O}\), thus all \(\ce{-NH-}\) carry D
+\item
+  dilute with \(\ce{D2O}\) buffer to make it partially refolded (for a
+  while)
+\item
+  dilute with excessive \(\ce{H2O}\) (for a while) at high pH (not that
+  many H)
+
+  \begin{itemize}
+  \item
+    those which are unfolded carry H.
+  \item
+    those which folded before maintains D: analyze by 2D NMR
+  \end{itemize}
+\item
+  finish folding by lowering pH
+\end{itemize}
+
+\hypertarget{week12-1-protein-proteinligand-interaction}{%
+\subsection{Week12-1 Protein-Protein/Ligand
+Interaction}\label{week12-1-protein-proteinligand-interaction}}
+
+\hypertarget{basics-2}{%
+\subsubsection{Basics}\label{basics-2}}
+
+\begin{itemize}
+\item
+  non-covalent interactions: hydrophobic, ionic, H bonds...
+\item
+  binding sites: inside? narrow?
+
+  \begin{itemize}
+  \item
+    small ligand: pockets in/outside
+  \item
+    larger: surface (peptide) or deeply inside (heme)
+  \item
+    huge: protein in grooves of DNA
+  \end{itemize}
+\item
+  structure
+
+  \begin{itemize}
+  \item
+    lock-and-key model: complementarity
+  \item
+    structural changes to minimize energy (flexible)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{qualitative-study}{%
+\subsubsection{Qualitative Study}\label{qualitative-study}}
+
+\hypertarget{pull-down-assay}{%
+\paragraph{"pull-down" assay}\label{pull-down-assay}}
+
+\href{https://www.thermofisher.com/sg/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/pull-down-assays.html}{Pull-Down
+Assays \textbar{} Thermo Fisher Scientific - SG}
+
+\begin{itemize}
+\item
+  \emph{in vitro}
+\item
+  fusion protein
+\item
+  other combination
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/12_1.png}
+\caption{}
+\end{figure}
+
+\hypertarget{nmr-csp}{%
+\paragraph{NMR CSP}\label{nmr-csp}}
+
+\begin{itemize}
+\item
+  \emph{in vitro}
+\item
+  residues that shift a lot are important
+\end{itemize}
+
+\(\Delta \mathrm{ppm}\)
+
+\hypertarget{yeast-two-hybrid}{%
+\paragraph{yeast two hybrid}\label{yeast-two-hybrid}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/12_2.png}
+\caption{12\_2}
+\end{figure}
+
+\hypertarget{applications-3}{%
+\paragraph{Applications}\label{applications-3}}
+
+\begin{itemize}
+\item
+  screening cDNA library to assign functions; identify drug target
+\item
+  mutation study (residues involved in interaction/binding)
+\item
+  drug discovery/find regulator compounds
+\end{itemize}
+
+Maybe we can compare the interaction strength by observing expression
+level (increase/decrease all matter)...
+
+\hypertarget{quantative-study}{%
+\subsubsection{Quantative Study}\label{quantative-study}}
+
+\hypertarget{thermodynamics}{%
+\paragraph{thermodynamics}\label{thermodynamics}}
+
+For 1:1 binding
+
+\[\ce{M + L <=>[k_{on}][k_{off}] ML}\qquad
+\Delta G=-RT\ln K_a=\Delta H-T\Delta S\]
+
+where \(K_d=1/K_a\). (\([ML]=K_a[M][L]\); \([M][L]=K_d[ML]\))
+
+We wish low \(K_d\) and negative \(\Delta G\)
+
+\hypertarget{itc}{%
+\paragraph{ITC}\label{itc}}
+
+\href{https://cmi.hms.harvard.edu/isothermal-titration-calorimetry}{Isothermal
+Titration Calorimetry (ITC) \textbar{} Center for Macromolecular
+Interactions (harvard.edu)}
+
+appratus:
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/itc_sample_data.png}
+\caption{itc\_sample\_data}
+\end{figure}
+
+Fit the curve, get \(\Delta H\), \(\Delta S\), \(K_a\), \(n\)
+(stochiometry, 化学计量)
+
+\hypertarget{equilibrium-and-saturation-binding}{%
+\paragraph{equilibrium and saturation
+binding}\label{equilibrium-and-saturation-binding}}
+
+\hypertarget{single-site}{%
+\subparagraph{single site}\label{single-site}}
+
+define fraction of M that has L on the site:
+
+\[\nu=\dfrac{[ML]}{[ML]+{[M]}}=\dfrac{K_a[L]}{K_a[L]+1}=\dfrac{[L]}{K_d+[L]}\]
+
+assuming \([L]\gg[M]\) (L not consumed in binding, use \([L]_{total}\))
+
+This will be a Michaelis-Menten-like curve.
+
+\hypertarget{multiple-equivalent-sites-no-interaction}{%
+\subparagraph{multiple equivalent sites, no
+interaction}\label{multiple-equivalent-sites-no-interaction}}
+
+Just multiply by \(n\) because they are identical and independent. Also,
+the effect is proportional to experimental measure. We also define
+binding fraction of all sites.
+
+\[\nu^*=\dfrac{nK_a[L]}{K_a[L]+1} \in[0,n)\\
+Y=\dfrac{\nu^*}{n}=\dfrac{K_a[L]}{K_a[L]+1}\in[0,1)\]
+
+equivalently，
+
+\[\dfrac{\nu^*}{[L]}=K_an-K_a\nu^*\]
+
+this is called \textbf{Scatchard equation}. We can get \(K_a\) (slope)
+and \(n\) (x intercept).
+
+\hypertarget{multiple-non-equivalent-sites-no-interaction}{%
+\subparagraph{multiple non-equivalent sites, no
+interaction}\label{multiple-non-equivalent-sites-no-interaction}}
+
+Due to independence, we can add up the results of all kinds of sites.
+
+\[\nu^*=\sum_i\dfrac{n_iK_{a,i}[L]}{K_{a,i}[L]+1}\]
+
+But the results given:
+
+\begin{itemize}
+\item
+  there's \(n\) separate lines, the slope of which is \(K_{a,i}\)
+\item
+  We can still know \(\sum\limits_i n_i\) from x intercept.
+\end{itemize}
+
+\hypertarget{multiple-non-equivalent-sites-interacting}{%
+\subparagraph{multiple non-equivalent sites,
+interacting}\label{multiple-non-equivalent-sites-interacting}}
+
+The Scatchard plot becomes a curve. Modify:
+
+\[\nu^*=\dfrac{nK_\pi[L]^{n_h}}{K_\pi[L]^{n_h}+1}\\
+K_\pi=\prod_iK_i\]
+
+still \(Y=\dfrac{\nu^*}{n}\), which can come from simple Scatchard
+plot...
+
+define \(\theta=Y/(1-Y)=K_\pi[L]^{n_h}\), then got Hill equation:
+
+\[\ln\theta=\ln K_\pi+n_h\ln[L]\]
+
+Interpretation:
+
+\begin{itemize}
+\item
+  fit the equation to get \(K_\pi\) (exp y-intercept) and \(n_h\)
+  (slope)
+\item
+  if no interaction, \(\ln\theta-\ln[L]\) curve will be straight, or
+  \(n_h=1\)
+\item
+  if \(n_h<1\), negative cooperativity, affinity \(\downarrow\)
+\item
+  if interaction, the curve looks like
+
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/12_3.png}\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/12_4.png}
+
+  At begining, too few, no cooperativity; in the end, no more sites.
+  Thus slope=1?
+
+  extrapolate the first and last part of the line and get x-intercept:
+  \(-\ln K_{a,1}/n_{h,1}=-\ln K_{a,1}\), also \(-\ln K_{a,n}\)
+
+  \begin{itemize}
+  \item
+    if \(n_h>1\), it looks like the left figure, \(K_{a,1}<K_{a,n}\)
+  \item
+    if \(n_h<1\), it looks like the right figure, \(K_{a,1}>K_{a,n}\)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{cd-and-fluorescence}{%
+\paragraph{CD and fluorescence}\label{cd-and-fluorescence}}
+
+change \([L]\) and get different signal
+
+\begin{itemize}
+\item
+  fluorescence: strength of maximum difference. 280 nm for Trp
+\item
+  fluorescence polarization: use \(r\) as \(\nu^*\)
+
+  \begin{itemize}
+  \item
+    rotation relaxation time: \(p=\dfrac{3nV}{RT}\)
+
+    where \(n\) is viscosity and \(V\) is molecular volume
+  \item
+    \(r=\dfrac{I_H-I_V}{I_H+2I_V}\), and according to Perrin equation
+
+    larger \(V\), longer \(p\), larger \(r\)
+  \item
+    advantages
+
+    \begin{itemize}
+    \item
+      independent on light intensity, fluorophone conc, etc, not
+      measuring intensity but the ratio between components
+    \item
+      less affected by instrumental change
+    \end{itemize}
+  \end{itemize}
+\item
+  CD: both far (2°) and near UV (3°)
+\item
+  eg: single site saturation. fit \(Y=\dfrac{B_{max}[L]}{K_d+[L]}\)
+
+  maybe: a linear term can be added to account for non-specific
+  background binding
+\end{itemize}
+
+\hypertarget{kinetics-of-binding}{%
+\subsubsection{Kinetics of Binding}\label{kinetics-of-binding}}
+
+\hypertarget{experiments}{%
+\paragraph{experiments}\label{experiments}}
+
+\hypertarget{surface-plasmon-resonance-spr}{%
+\subparagraph{surface plasmon resonance
+(SPR)}\label{surface-plasmon-resonance-spr}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/12_5.png}
+\caption{12\_5}
+\end{figure}
+
+steps
+
+\begin{itemize}
+\item
+  immobilization: fix protein/ligand to the surface covalently
+\item
+  association: add ligand/protein
+\item
+  equilibrium: measure association
+\item
+  dissociation: measure
+\item
+  regeneration: break the remaining complex by acid/base
+\end{itemize}
+
+\hypertarget{biolayer-interferometry}{%
+\subparagraph{biolayer interferometry}\label{biolayer-interferometry}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/12_7.png}
+\caption{}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/12_8.png}
+\caption{}
+\end{figure}
+
+\begin{itemize}
+\item
+  adding ligand changes the thickness of biolayer, causing a spectrum
+  shift. (interference, thus intensity changes)
+\item
+  record the shift in different wavelengths. 
+\item
+  extract an index from it as "response". (like the peak shift)
+\item
+  collect this "response" as a function of time
+\item
+  operation: just dip the tip into ligand/buffer solutions
+\end{itemize}
+
+\hypertarget{sensorgrams}{%
+\paragraph{sensorgrams}\label{sensorgrams}}
+
+\begin{figure}
+\centering
+\includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/12_6.png}
+\caption{12\_6}
+\end{figure}
+
+\(k_{on}\) and \(k_{off}\) are fitted with \(y=y_\infty+A\exp(-kt)\)
+
+\hypertarget{lsm3243-outline}{%
+\subsection{LSM3243 outline}\label{lsm3243-outline}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  protein structure
+
+  \begin{itemize}
+  \item
+    CORN
+  \item
+    peptide planar
+  \item
+    torsion angle definition
+  \item
+    \(\omega\) : trans, Pro
+  \item
+    \(\phi\) and \(\psi\) : \(\ce{N-C_{\alpha}}, \ce{C_O-C_{\alpha}}\)
+  \item
+    ramachandran plot
+
+    \begin{itemize}
+    \item
+      vdw radii, 3 regions
+    \item
+      special: Gly, Pro. interrupt \(\alpha, \beta\)
+    \end{itemize}
+  \item
+    structure features of typical conformations
+
+    \begin{itemize}
+    \item
+      helix, sheet, turn, coil
+    \end{itemize}
+  \item
+    side chain
+
+    \begin{itemize}
+    \item
+      definition, \(\chi_1, \chi_2\), other, last \(\chi\).
+    \end{itemize}
+  \end{itemize}
+\item
+  interactions
+
+  \begin{itemize}
+  \item
+    electrostatic
+
+    \begin{itemize}
+    \item
+      effect of solvent/environment, salt, 
+    \item
+      which parts carry charge
+    \item
+      dipole: no charge. approximation. solvent with solute/solvent
+    \end{itemize}
+  \item
+  \end{itemize}
+\item
+  nucleic acid
+
+  \begin{itemize}
+  \item
+  \end{itemize}
+\item
+  structure of membrane
+
+  \begin{itemize}
+  \item
+    lipids
+
+    \begin{itemize}
+    \item
+      features
+
+      \begin{itemize}
+      \item
+        amphiphilic (phospholipid, cholesterol)
+      \item
+        differ in composition
+      \item
+        asymmetric (two)
+      \item
+        random (same)
+      \end{itemize}
+    \item
+      types
+
+      \begin{itemize}
+      \item
+        glycerophospholipids: most, 13 C
+      \item
+        sphingolipids: long and straight chain, stronger vdW to hold
+      \item
+        cholesterol: hold more (rigid, two faces, hydrophobic)
+      \end{itemize}
+    \item
+      lipid rafts
+
+      \begin{itemize}
+      \item
+        thicker
+      \item
+        resistant
+      \item
+        functional proteins
+      \end{itemize}
+    \end{itemize}
+  \item
+    protein
+
+    \begin{itemize}
+    \item
+      intergral
+    \item
+      peripheral
+    \item
+      anchored
+    \end{itemize}
+  \item
+    micelles
+
+    \begin{itemize}
+    \item
+      CMC, single layer-\/-micelles-\/-disrupted
+    \item
+      DPC, triglyceride
+    \end{itemize}
+  \item
+  \end{itemize}
+\item
+  membrane potential
+\item
+  membrane transport
+\item
+  CD
+
+  \begin{itemize}
+  \item
+    principle
+  \item
+    applications
+
+    \begin{itemize}
+    \item
+      DNA conformation
+    \item
+      protein secondary structure
+    \item
+      protein folding under various conditions
+
+      (folding: does it lose normal structure)
+    \item
+      protein-ligand
+    \item
+      protein mutation
+    \item
+      folding kinetics
+    \end{itemize}
+  \end{itemize}
+\item
+  fluorescence
+
+  \begin{itemize}
+  \item
+    principle
+
+    \begin{itemize}
+    \item
+      basic
+    \item
+      polarization
+    \end{itemize}
+  \item
+    applications
+
+    \begin{itemize}
+    \item
+      interactions and binding parameters
+    \item
+      protein folding under various conditions
+    \item
+      visualization
+    \end{itemize}
+  \item
+    FRET
+
+    \begin{itemize}
+    \item
+      conditions
+    \item
+      study interactions (conformation)
+    \end{itemize}
+  \item
+    quenching: study accessibility into aromatic
+  \end{itemize}
+\item
+  NMR
+
+  \begin{itemize}
+  \item
+    principle
+
+    \begin{itemize}
+    \item
+      basic, chemical shift, J coupling, T2
+    \end{itemize}
+  \item
+    applications
+
+    \begin{itemize}
+    \item
+      inhibitor/drug identification
+    \item
+      protein folding
+    \item
+      metabonomics (biomarker)
+    \end{itemize}
+  \end{itemize}
+
+  summary
+\item
+  comformation transition
+
+  \begin{itemize}
+  \item
+    model
+
+    \begin{itemize}
+    \item
+      basic and simple models
+    \item
+      zipper model
+    \end{itemize}
+  \end{itemize}
+\item
+  protein folding
+\item
+  protein interaction
+\end{enumerate}
+
+\hypertarget{final-exam}{%
+\subsection{final exam}\label{final-exam}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  a protein with 10 beta (barrel), 2 helix, no Cys/Trp
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    possible interactions in helices? interaction that mainly hold the
+    barrel? possible interactions between helix and helix-cap?
+  \item
+    reasons why 5\% SDS makes unfolded
+  \item
+    design a protocol to verify it's unfolded
+  \item
+    how to determine if it interact with a 310-AA protein? if so, how to
+    determine binding ratio?
+  \end{enumerate}
+\item
+  a G\textsubscript{12} and C\textsubscript{12} DNA
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    60℃, no salt, what form? why?
+  \item
+    1M NaCl, what form, why?
+  \item
+    what technique to use?
+  \end{enumerate}
+\item
+  a POPS vesicle, liposome-like
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    glucose, alanine, methanol. who can retain in the vesicle?
+
+    i might forgot "polar"
+  \item
+    add 1 mM NaCl and 0.2 mM protein with 10 charge
+    (Cl\textsuperscript{-} as counter ion) outside, calculate
+    equilibrium concentration of all
+  \end{enumerate}
+\item
+  two plots of v and {[}L{]}. method 1: measure the concentration of
+  protein that bound on the ligand. method 2: measure the concentration
+  of ligand that bound on the protein. data also given
+
+  \begin{figure}
+  \centering
+  \includegraphics{E:/undergraduate_study/study/abroad study/2021 NUS/study/LSM3243/notes/exam4.jpg}
+  \caption{exam4}
+  \end{figure}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    how many binding sites on the protein? why?
+  \item
+    \(K_d\) value?
+  \item
+    \([L]\) at 5 mM, the fraction of the protein bounded?
+  \item
+    0.9 of the protein bounded, \([L]\)?
+  \item
+    draw and label the scatchard plot of method 2.
+
+    how to determine \(n\) and \(K_a\)? is the sites equivalent?
+  \item
+    suggest technique for each method and explain.
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{beyond-course}{%
+\subsection{beyond course}\label{beyond-course}}
+
+\hypertarget{differential-scanning-fluorimetry-dsf}{%
+\paragraph{Differential Scanning Fluorimetry
+(DSF)}\label{differential-scanning-fluorimetry-dsf}}
+
+\href{https://zh.wikipedia.org/wiki/差示扫描量热法}{差示扫描量热法 -
+维基百科，自由的百科全书 (wikipedia.org)}
+
+\href{https://cmi.hms.harvard.edu/differential-scanning-fluorimetry}{Differential
+Scanning Fluorimetry (DSF) \textbar{} Center for Macromolecular
+Interactions (harvard.edu)}
+
+\hypertarget{more-on-nmr}{%
+\paragraph{more on NMR}\label{more-on-nmr}}
+
+radiofrequency pulse
+
+free induction decay
+
+when the nucleus magnet re-aligns, its direction changes and induces a
+chaning electric field.
+
+\hypertarget{note}{%
+\subsection{Note}\label{note}}
+
+I'll use quotation box to highlight important content, grey text to give
+additional notes, other colored text to denote other environments, so
+that it's clear.
+
+Unimportant or very short part will be entitled "in addition" or inside
+a code box and a simple list. Do not spend much time on them.
+
+ so that it's clear.
+
+ The note is to help with reviewing rather than for publishing.
+
+ Do think and remember more than typing!!!
+
+The colors:
+\url{https://blog.csdn.net/qq_40862304/article/details/109893291}
+
+\begin{verbatim}
+平常有时间做一点，就为考试周减轻压力。有时间还可多看书。
+\end{verbatim}
+
+\begin{quote}
+blubook主题可能为了图表的断页而压缩列表空间和字体。。
+\end{quote}
+
+化生81资料编写小组
+
+\end{document}
