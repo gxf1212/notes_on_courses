@@ -39,7 +39,7 @@
 \begin{enumerate}
 	\item 色谱流出曲线 （chromatogram）：指样品注入色谱柱后，信号随时间变化的曲线（一般为高斯分布曲线）。
 	\item 基线：无组分通过色谱柱时，检测器的噪声随时间变化的曲线。
-	\item 峰宽：峰底宽$W_b$、峰半宽$W_{1/2}$、标准偏差$\sigma$的关系是（如图\ref{fig:chp1peak}）
+	\item 峰宽：峰底宽$W_b$、峰半宽$W_{1/2}$、标准偏差$\sigma$（峰高0.607倍处峰宽的一半）的关系是（如图\ref{fig:chp1peak}）
 	\begin{theorem*}{峰宽的关系}{}
 		\begin{gather*}
 			W_b=4\sigma\\
@@ -54,8 +54,8 @@
 	\end{figure}
 	\item 保留值
 	\begin{itemize}
-		\item 保留时间\footnote{保留：retention}$t_R$：进样到出现色谱峰的时间。
-		\item 保留体积$V_R$：进样到出现色谱峰时消耗的流动相体积。
+		\item 保留时间\footnote{保留：retention}$t_R$：从进样到组分出现最大浓度处的时间。
+		\item 保留体积$V_R$：从进样到组分出现最大浓度处消耗的流动相体积。
 		
 		和保留时间的关系：$V=t\times F$，$F$是流动相线速度。
 		\item 死时间$t_0$（$t_M$）：流动相从进样口到检测器流过的时间。（另一种理解是不被固定相吸附的组分如甲烷、空气的保留时间。）
@@ -80,14 +80,14 @@
 		K=\dfrac{C_s}{C_m}
 	\end{equation*}
 	
-	分配比$k$：一定$T$、$p$，两相达平衡后，组分在固定相质量（$p$）和流动相质量（$q$）的比值。
+	分配比/容量因子$k$：一定$T$、$p$，两相达平衡后，组分在固定相质量（$p$）和流动相质量（$q$）的比值。
 	\begin{equation*}
 		k=\dfrac{p}{q}
 	\end{equation*}
 	
 	$K$与$k$的关系\footnote{都是对于单个物质而言}：
 	\begin{equation*}
-		K=\dfrac{C_s}{C_m} =\dfrac{p/ V_s}{q/ V_M}=k \dfrac{V_0}{V_s}
+		K=\dfrac{C_s}{C_m} =\dfrac{p/ V_s}{q/ V_M}=k \dfrac{V_0}{V_s}=k\beta
 	\end{equation*}
 	\begin{theorem*}{$k$与保留值的关系}{}
 		\begin{gather*}
@@ -120,7 +120,7 @@
 \section{色谱两大理论}
 %2．色谱两大理论—塔板理论和速率理论。塔板理论描述色谱流出曲线的方程，并通过这一方程各参数来研究影响分离的因素，要会计算。速率理论（van Deemter方程）是描述提高柱效的途径，理解范第姆特方程中各参数的含义？
 
-\subsection{塔板理论}
+\subsection{塔板理论（Theory of Plates）}
 \begin{itemize}
 	\item 目的：从理论上得出描述色谱流出曲线的方程，并通过这一方程各参数来研究影响分离的因素。
 	\item 两大假设：色谱柱存在多级“塔板”，每级塔板包含一个流动相和固定相，各自含一定量的各种组分；每种组分通过时，\textbf{在每级塔板处，两相间达到一次平衡}。
@@ -133,11 +133,11 @@
 \begin{equation*}
 	f_{N,r}=\dfrac{N!}{r!(N-r)!} \left(\dfrac{1}{1+k}\right)^r \left(\dfrac{k}{1+k}\right)^{N-r}
 \end{equation*}
-以此作图即得流出曲线。
+最后一级塔板处，$r=n$，作$f\sim N$图即得流出曲线。
 
 $N$特别大时，将呈正态分布：
 \begin{equation*}
-	C=C_{max}\times \mathrm{exp}\left\{-\dfrac{n(t_R-t)^2}{2t_R^2}\right\}
+	C=C_{max}\times \mathrm{exp}\left\{-\dfrac{n(t_R-t)^2}{2\sigma^2}\right\}
 \end{equation*}
 
 $C_{max}$其实就是峰高。对比标准正态分布曲线得：
@@ -198,7 +198,7 @@ $H=L/n$为塔板高度，$L$为色谱柱长，其他条件不变只是增长色�
 	\begin{equation*}
 		C=q\dfrac{k}{(1+k)^2}\dfrac{d_f^2}{D_s}+\omega\dfrac{k}{(1+k)^2}\dfrac{d_p^2}{D_m}
 	\end{equation*}
-	两项分别为固定相和流动相传质阻力。
+	两项分别为固定相和流动相传质阻力。$d_f$为固定相液膜厚度。
 \end{enumerate}
 
 $H$对$u$求导可推出：
@@ -206,6 +206,15 @@ $H$对$u$求导可推出：
 	H_{min}=A+2\sqrt{BC}\\
 	u_{opt}=\sqrt{\dfrac{B}{C}}
 \end{gather*}
+
+\begin{emptytcb*}{总结：提高分离效率的方法}{}
+	\begin{itemize}
+		\item 使用较细粒度的填料，并$d_p$和$r$；尽量填充均匀，减小$\lambda$
+		；适当减小$d_f$
+		\item 确定最优的载气的分子量或压力（气相色谱）/流速（液相色谱），平衡好$B$和$C$项
+		\item 条件允许的情况下增加柱长$L$
+	\end{itemize}
+\end{emptytcb*}
 
 \subsection{分离条件的选择}
 联立上述公式\footnote{这里近似$W_{b_1}\approx W_{b_2}$，代入式\eqref{eqn:1.1},\eqref{eqn:1.2}即可推得。需注意，$n_{eff}$与被分离的组分无关，只和色谱柱、条件有关，此时代入$n_{eff}=16{\left(\dfrac{t'_R}{W}\right)}^2$对于不同组分会算出不同的结果，这是前一步近似导致的。}可得：
